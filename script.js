@@ -397,101 +397,6 @@ const localeData = {
         "Sim-to-Sim/Real 零样本迁移验证。"
       ]
     },
-    overviewPublications: [
-      {
-        title: "基于多模态元强化学习的机械臂实时协同控制研究 (VA-FastNavi-MARL)",
-        authors: "景晟熙（共一作者）",
-        venue: "ICME 2026（CCF-B 类会议，已录用）",
-        type: "Deployment",
-        highlight: "SAC + MAML + MuJoCo + 三臂协同",
-        summary: "利用 MuJoCo 搭建三台 UR5 高保真仿真环境，基于 SAC 与 MAML 框架的元强化学习控制器实现多机械臂协同控制与快速自适应。在噪声与视觉遮挡压测下 20 Epoch 收敛至零碰撞，延迟低于 0.6 秒。",
-        links: [
-          { label: "项目主页", url: "#featured-project" }
-        ]
-      },
-      {
-        title: "人形机器人敏捷全身控制算法复现 (ASAP)",
-        authors: "景晟熙",
-        venue: "RSS 2025 论文复现｜Isaac Gym + PyTorch",
-        type: "VLA",
-        highlight: "PPO + AMASS + Unitree G1 + Sim-to-Real",
-        summary: "基于 Isaac Gym 与 PyTorch 复现 ASAP 核心框架，运用 PPO 强化学习配合 AMASS 数据集实现 Unitree G1 人形机器人的动作追踪与全身控制，验证 Sim-to-Real 零样本迁移。",
-        links: [
-          { label: "实验室", url: "https://eilab-wanghong.eu.cc/" },
-          { label: "GitHub", url: "https://github.com/Asuna404-not-found" }
-        ]
-      },
-      {
-        title: "基于视觉深度学习的网络开发 — 医学图像分割",
-        authors: "景晟熙",
-        venue: "Kaggle Vessel Segmentation Top 17%",
-        type: "VLA",
-        highlight: "VGGNet + U-Net + YOLO + Dice Loss",
-        summary: "依托 PyTorch 构建端到端医学图像分析 Pipeline，对比 VGGNet、U-Net、YOLO 等多尺度模型。将 VGGNet 作为 Backbone 融入分割架构，结合 Dice Loss 与交叉熵联合损失，在 Kaggle Vessel Segmentation 数据集上斩获 Top 17%。",
-        links: [
-          { label: "Kaggle", url: "https://www.kaggle.com/" }
-        ]
-      },
-      {
-        title: "摊铺机料斗抗离析装置研制（国家级大创项目）",
-        authors: "景晟熙（主导智能识别与感知系统）",
-        venue: "国家级大学生创新训练项目 | 2024-2026",
-        type: "Deployment",
-        highlight: "结构光相机 3D 点云 + YOLOv8 + 实时监测",
-        summary: "主导开发\"智能识别与感知系统\"，深度融合结构光相机 3D 点云与 YOLOv8 目标检测算法，重构料堆特征提取网络，实现对混合料异常高度差与表面形貌的实时高精度感知。",
-        links: [
-          { label: "项目详情", url: "#projects" }
-        ]
-      }
-    ],
-    simToRealBreakdown: [
-      {
-        title: "VA-FastNavi-MARL: 三机械臂实时协同控制",
-        authors: "景晟熙（共一作者）",
-        venue: "ICME 2026（CCF-B） | MuJoCo + SAC + MAML",
-        type: "Deployment",
-        highlight: "MuJoCo + SAC + MAML + 三臂协同",
-        summary: "基于多模态元强化学习（SAC + MAML）的三台 UR5 机械臂实时协同控制系统。在 VS Code 环境下基于 Python 开发，利用 MuJoCo 搭建高保真仿真环境。模型在 20 个 Epoch 内收敛至零碰撞，响应延迟低于 0.6 秒。",
-        links: [
-          { label: "项目详情", url: "#featured-project" }
-        ]
-      },
-      {
-        title: "摊铺机料斗抗离析装置研制（国家级大创项目）",
-        authors: "景晟熙（主导智能识别与感知系统）",
-        venue: "国家级大学生创新训练项目 | 2024-2026",
-        type: "Deployment",
-        highlight: "结构光相机 3D 点云 + YOLOv8 + 实时监测",
-        summary: "主导开发\"智能识别与感知系统\"，构建基于机器视觉的沥青混合料状态实时监测 Pipeline。深度融合结构光相机 3D 点云数据与 YOLOv8 目标检测算法，重构料堆特征提取网络。",
-        links: [
-          { label: "项目详情", url: "#projects" }
-        ]
-      }
-    ],
-    vlaPublication: {
-      title: "基于 Isaac Gym 的人形机器人敏捷全身控制算法复现 (ASAP)",
-      authors: "景晟熙",
-      venue: "RSS 2025 论文复现 | Isaac Gym + PyTorch",
-      type: "VLA",
-      highlight: "PPO + AMASS + Unitree G1 + Sim-to-Real",
-      summary: "在湖北大学具身智能实验室基于 Isaac Gym 与 PyTorch 复现 RSS 2025 论文 ASAP 核心框架。运用 PPO 强化学习算法结合 AMASS 数据集完成动作追踪训练，在 Unitree G1 人形机器人模型上部署并复现跳投、跳跃等高动态敏捷运动。",
-      links: [
-        { label: "实验室", url: "https://eilab-wanghong.eu.cc/" },
-        { label: "GitHub", url: "https://github.com/Asuna404-not-found" }
-      ]
-    },
-    vlaPublication: {
-      title: "面向具身操作的 Vision-Language-Action",
-      authors: "景晟熙",
-      venue: "进行中的研究方向",
-      type: "VLA",
-      highlight: "多模态对齐 + 动作生成",
-      summary: "探索将视觉观测与语言指令映射到机器人动作的 VLA 风格策略，用于具身操作与任务执行。",
-      links: [
-        { label: "实验室", url: "https://eilab-wanghong.eu.cc/" },
-        { label: "GitHub", url: "https://github.com/Asuna404-not-found" }
-      ]
-    },
     futurePapers: [
       {
         title: "基于多模态元强化学习的机械臂实时协同控制（VA-FastNavi-MARL）",
@@ -670,89 +575,6 @@ const localeData = {
         "Sim-to-Sim/Real zero-shot transfer validated."
       ]
     },
-    overviewPublications: [
-      {
-        title: "Real-Time Coordinated Control of Robot Arms via Multi-Modal Meta-Reinforcement Learning (VA-FastNavi-MARL)",
-        authors: "Shengxi Jing (co-first author)",
-        venue: "ICME 2026 (CCF-B Conference, Accepted)",
-        type: "Deployment",
-        highlight: "SAC + MAML + MuJoCo + Three-Arm Coordination",
-        summary: "Built a high-fidelity three-UR5 arm simulation workspace with MuJoCo. Developed a meta-RL controller based on SAC + MAML for multi-arm coordinated control and fast task adaptation. Converges to zero collision within 20 epochs with latency below 0.6s under noise and occlusion stress tests.",
-        links: [
-          { label: "Project Page", url: "#featured-project" }
-        ]
-      },
-      {
-        title: "Reproducing Agile Whole-Body Control for Humanoid Robots (ASAP)",
-        authors: "Shengxi Jing",
-        venue: "RSS 2025 Reproduction | Isaac Gym + PyTorch",
-        type: "VLA",
-        highlight: "PPO + AMASS + Unitree G1 + Sim-to-Real",
-        summary: "Reproduced the ASAP core framework using Isaac Gym and PyTorch. Applied PPO with AMASS dataset for motion tracking and whole-body control (WBC) on Unitree G1 humanoid, validated Sim-to-Real zero-shot transfer.",
-        links: [
-          { label: "Lab", url: "https://eilab-wanghong.eu.cc/" },
-          { label: "GitHub", url: "https://github.com/Asuna404-not-found" }
-        ]
-      },
-      {
-        title: "Medical Image Segmentation with Deep Learning",
-        authors: "Shengxi Jing",
-        venue: "Kaggle Vessel Segmentation Top 17%",
-        type: "VLA",
-        highlight: "VGGNet + U-Net + YOLO + Dice Loss",
-        summary: "Built an end-to-end medical image analysis pipeline with PyTorch, comparing VGGNet, U-Net, and YOLO. Integrated VGGNet as backbone with Dice loss + cross-entropy for fine vessel segmentation, achieving Top 17% on Kaggle.",
-        links: [
-          { label: "Kaggle", url: "https://www.kaggle.com/" }
-        ]
-      },
-      {
-        title: "Development of Anti-Segregation Device for Asphalt Paver (National Innovation Project)",
-        authors: "Shengxi Jing (Lead, Intelligent Perception System)",
-        venue: "National Innovation Training Program | 2024-2026",
-        type: "Deployment",
-        highlight: "Structured-light 3D Point Cloud + YOLOv8 + Real-time Monitoring",
-        summary: "Led the development of the 'Intelligent Recognition and Perception System'. Integrated structured-light camera 3D point cloud data with YOLOv8 for material pile feature extraction, achieving real-time high-precision perception of abnormal height differences and surface topography.",
-        links: [
-          { label: "Project Details", url: "#projects" }
-        ]
-      }
-    ],
-    simToRealBreakdown: [
-      {
-        title: "VA-FastNavi-MARL: Three-Arm Real-Time Coordinated Control",
-        authors: "Shengxi Jing (co-first author)",
-        venue: "ICME 2026 (CCF-B) | MuJoCo + SAC + MAML",
-        type: "Deployment",
-        highlight: "MuJoCo + SAC + MAML + Three-Arm Coordination",
-        summary: "Multi-modal meta-reinforcement learning (SAC + MAML) for real-time coordinated control of three UR5 arms. Built with Python in VS Code on MuJoCo. Converges to zero collision within 20 epochs with latency below 0.6s.",
-        links: [
-          { label: "Details", url: "#featured-project" }
-        ]
-      },
-      {
-        title: "Anti-Segregation Device for Asphalt Paver (National Innovation Project)",
-        authors: "Shengxi Jing (Lead, Intelligent Perception System)",
-        venue: "National Innovation Training Program | 2024-2026",
-        type: "Deployment",
-        highlight: "Structured-light 3D Point Cloud + YOLOv8 + Real-time Monitoring",
-        summary: "Led development of 'Intelligent Recognition and Perception System'. Built a real-time monitoring pipeline for asphalt mixture status using machine vision. Integrated structured-light camera 3D point cloud with YOLOv8 for material pile feature extraction.",
-        links: [
-          { label: "Details", url: "#projects" }
-        ]
-      }
-    ],
-    vlaPublication: {
-      title: "Humanoid Agile Whole-Body Control via Deep RL (ASAP Reproduction)",
-      authors: "Shengxi Jing",
-      venue: "RSS 2025 Reproduction | Isaac Gym + PyTorch",
-      type: "VLA",
-      highlight: "PPO + AMASS + Unitree G1 + Sim-to-Real",
-      summary: "Reproduced the ASAP core framework (RSS 2025) using Isaac Gym and PyTorch at EILab, Hubei University. Applied PPO with AMASS dataset for motion tracking and whole-body control, deploying jumping and throwing motions on Unitree G1 humanoid.",
-      links: [
-        { label: "Lab", url: "https://eilab-wanghong.eu.cc/" },
-        { label: "GitHub", url: "https://github.com/Asuna404-not-found" }
-      ]
-    },
     futurePapers: [
       {
         title: "Real-Time Coordinated Control of Robot Arms via Multi-Modal Meta-Reinforcement Learning (VA-FastNavi-MARL)",
@@ -844,14 +666,7 @@ const localeData = {
   }
 };
 
-const filterDefinitions = [
-  { key: "All", labelKey: "filters.all" },
-  { key: "Deployment", labelKey: "filters.deployment" },
-  { key: "VLA", labelKey: "filters.vla" }
-];
-
 let currentLanguage = getStoredLanguage();
-let currentFilter = "All";
 
 function getStoredLanguage() {
   const stored = window.localStorage.getItem(STORAGE_KEY);
@@ -876,19 +691,6 @@ function renderActionLink(link, variant = "secondary") {
   return `<a class="action-link action-link-${variant}" href="${link.url}" target="${target}"${rel}>${link.label}</a>`;
 }
 
-function getPublicationState(language, item) {
-  const map = {
-    zh: {
-      Deployment: "系统主线",
-      VLA: "进行中"
-    },
-    en: {
-      Deployment: "System Track",
-      VLA: "Ongoing"
-    }
-  };
-  return map[language]?.[item.type] || (language === "zh" ? "研究条目" : "Research Entry");
-}
 
 function getProjectState(language, item) {
   const title = item.title.toLowerCase();
@@ -1018,79 +820,7 @@ function renderVlaDirection(language) {
     .join("");
 }
 
-function renderFilters(language) {
-  const container = document.getElementById("pub-filters");
-  const dict = uiText[language];
-  container.innerHTML = filterDefinitions
-    .map(
-      (item) => `
-        <button
-          class="filter-chip ${item.key === currentFilter ? "is-active" : ""}"
-          type="button"
-          data-filter="${item.key}"
-        >
-          ${getByPath(dict, item.labelKey)}
-        </button>
-      `
-    )
-    .join("");
 
-  container.onclick = (event) => {
-    const target = event.target.closest("[data-filter]");
-    if (!target) {
-      return;
-    }
-    currentFilter = target.dataset.filter;
-    renderFilters(currentLanguage);
-    renderPublications(currentLanguage);
-  };
-}
-
-function renderPublications(language) {
-  const container = document.getElementById("publication-list");
-  const locale = localeData[language];
-  let items = [];
-
-  if (currentFilter === "All") {
-    items = locale.overviewPublications;
-  } else if (currentFilter === "Deployment") {
-    items = locale.simToRealBreakdown;
-  } else if (currentFilter === "VLA") {
-    items = [locale.vlaPublication];
-  }
-
-  container.innerHTML = items
-    .map(
-      (item) => {
-        const primaryLink = item.links?.[0];
-        const secondaryLinks = item.links?.slice(1) ?? [];
-        return `
-        <article class="publication-card">
-          <div class="card-state-row">
-            <span class="card-state-badge">${getPublicationState(language, item)}</span>
-            <span class="card-state-track">${item.type}</span>
-          </div>
-          <div class="publication-head">
-            <h3 class="publication-title">${item.title}</h3>
-            <p class="publication-meta">${item.authors}</p>
-          </div>
-          <p class="publication-meta publication-meta-strong"><strong>${item.venue}</strong></p>
-          <p class="publication-summary">${item.summary}</p>
-          <p class="publication-tagline">${item.highlight}</p>
-          <div class="card-action-stack">
-            <div class="card-action-primary">
-              ${primaryLink ? renderActionLink(primaryLink, "primary") : ""}
-            </div>
-            <div class="card-action-secondary">
-              ${secondaryLinks.map((link) => renderActionLink(link, "secondary")).join("")}
-            </div>
-          </div>
-        </article>
-      `;
-      }
-    )
-    .join("");
-}
 
 function renderFuturePapers(language) {
   const container = document.getElementById("future-paper-list");
@@ -1208,28 +938,6 @@ function renderAwards(language) {
   `).join("");
 }
 
-function renderCompetitions(language) {
-  const container = document.getElementById("competition-list");
-  const data = localeData[language].competitionData;
-  if (!data || !data.length) return;
-
-  const label = language === "zh" ? "竞赛经历" : "Competition Experience";
-
-  container.innerHTML = `
-    <div class="competition-section">
-      <h4 class="competition-section-title">${label}</h4>
-      ${data.map(c => `
-        <div class="competition-item">
-          <strong class="competition-name">${c.name}</strong>
-          <div class="competition-meta">
-            <span class="competition-level">${c.level}</span>
-            <span class="competition-role">${c.role}</span>
-          </div>
-        </div>
-      `).join("")}
-    </div>
-  `;
-}
 
 function renderSkills(language) {
   const container = document.getElementById("skills-overview");
@@ -1334,7 +1042,6 @@ function initializeHomepageMotion() {
       ".project-card",
       ".stack-card",
       ".timeline-item",
-      ".publication-card"
     ].join(", ")
   );
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
