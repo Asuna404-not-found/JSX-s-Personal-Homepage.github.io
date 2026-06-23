@@ -22,7 +22,7 @@ const uiText = {
       eyebrow: "个人研究主页",
       subtitle: "长安大学机械工程与智能装备学院本科生｜研究方向：具身智能、强化学习与机械臂控制",
       text:
-        '我目前在长安大学机械工程与智能装备学院，专业为机械工程（交通建设与智能装备）。依托 <a href="https://eilab-wanghong.eu.cc/" target="_blank" rel="noopener noreferrer">EILab</a>，主要关注具身智能与强化学习机械臂控制。当前工作集中于三机械臂多模态操作、仿真到真实部署等具身智能方向内容。',
+        '我目前在长安大学机械工程与智能装备学院，专业为机械工程（交通建设与智能装备）。依托 EILab，主要关注具身智能与强化学习机械臂控制。当前工作集中于三机械臂多模态操作、仿真到真实部署等具身智能方向内容。',
       viewResearch: "查看研究",
       getInTouch: "联系我",
       lab: "实验室",
@@ -30,11 +30,11 @@ const uiText = {
       cv: "仓库",
       email: "邮箱",
       identityRole: "本科生，EILab",
-      identitySchool: "长安大学机械工程与智能装备学院",
-      focusLabel: "研究焦点",
-      focusValue: "/ 具身智能 / 强化学习",
+      identitySchool: "长安大学机械工程与智能装备学院 · 机械工程",
+      focusLabel: "研究方向",
+      focusValue: "具身智能 / 强化学习 / 元学习",
       nowLabel: "当前工作",
-      nowValue: "研究具身智能与机器人学习",
+      nowValue: "具身智能与机器人学习",
       locationLabel: "所在地",
       locationValue: "中国，陕西，西安"
     },
@@ -50,26 +50,26 @@ const uiText = {
        embodied: "具身智能",
        rl: "强化学习",
        meta: "元学习",
-       robot: "机器人操作与控制",
+       robot: "机械臂与人形机器人控制",
        cv: "机器视觉与深度学习",
        sim2real: "Sim-to-Real",
       }
     },
     multiArm: {
     eyebrow: "代表项目",
-    note: "当前最具代表性的研究项目，集中体现多机械臂实时协同操作、元强化学习算法设计与高保真仿真环境开发能力 。",
+    note: "基于多模态元强化学习（SAC + MAML）的三台 UR5 机械臂实时协同控制系统。模型在 20 个 Epoch 内收敛至零碰撞，响应延迟低于 0.6 秒，已被 ICME 2026 录用。",
     badge: "核心研究",
-    overviewTitle: "基于多模态元强化学习的三机械臂实时协同控制 (VA-FastNavi-MARL) ",
+    overviewTitle: "基于多模态元强化学习的机械臂实时协同控制 (VA-FastNavi-MARL) ",
     snapshotTitle: "项目概览",
     pipelineTitle: "研究链路",
     highlightsTitle: "核心亮点",
     focusLabel: "系统聚焦",
-    focusItem1: "Three UR5 Arms ",
+    focusItem1: "三台 UR5 机械臂 ",
     focusItem2: "MuJoCo + SAC + MAML ",
-    focusItem3: "离散相位标志调配", 
+    focusItem3: "离散相位标志调配",
     focusItem4: "零碰撞避障 ",
     galleryTitle: "项目可视化",
-    galleryNote: "以下展示覆盖仿真环境搭建、算法逻辑验证与多臂协同实验控制过程，模型在20个Epoch内收敛至零碰撞，响应延迟低于0.6秒 。",
+    galleryNote: "以下展示覆盖仿真环境搭建、算法逻辑验证与多臂协同实验控制过程。",
     media: {
       realKicker: "协同策略",
       realType: "算法机制",
@@ -95,38 +95,39 @@ const uiText = {
   },
   humanoid: {
     eyebrow: "研究方向",
-    title: "人形机器人敏捷运动与全身控制 (ASAP) ",
-    note: "基于 HumanoidVerse 与 Isaac Gym，聚焦高维度人形机器人的全身控制 (WBC) 与从低保真到高保真环境的 Sim-to-Real 零样本迁移 。",
+    title: "人形机器人敏捷全身控制 (ASAP) ",
+    note: "基于 Isaac Gym 与 PyTorch 复现 RSS 2025 论文 ASAP 核心框架，面向 Unitree G1 人形机器人实现从低保真仿真到高保真环境的零样本迁移。",
     badge: "研究方向",
-    repo: "Isaac Gym / PyTorch / Unitree G1 ",
-    overviewTitle: "当前主线：基于深度强化学习的人形机器人敏捷运动 ",
+    repo: "Isaac Gym / PyTorch / Unitree G1 / AMASS ",
+    overviewTitle: "基于深度强化学习的人形机器人敏捷全身控制复现 ",
     snapshotTitle: "当前快照",
     pipelineTitle: "推进路线",
     highlightsTitle: "研究判断",
     focusLabel: "当前聚焦",
     focusItem1: "ASAP 核心框架复现 ",
-    focusItem2: "PPO + AMASS 数据集 ",
-    focusItem3: "Unitree G1 运动追踪 ",
-    focusItem4: "Sim-to-Sim/Real 部署 "
+    focusItem2: "PPO + AMASS 数据集动作追踪 ",
+    focusItem3: "Unitree G1 跳投/跳跃 ",
+    focusItem4: "Sim-to-Sim/Real 零样本迁移 "
   },
     updates: {
       eyebrow: "动态",
       title: "科研动态",
-      note: "保留近期的学术成果记录，如会议论文（ICME等）的录用与系统实装进展，展示持续推进的研究脉络 。"
+      note: "近期的学术成果记录，包括 CCF-B 会议论文（ICME）录用与系统实装进展。"
     },
     research: {
       eyebrow: "方向概览",
       title: "研究方向概览",
-      note: "在详细模块展开之前，先概览当前围绕具身智能、强化学习、元学习以及机器视觉在交叉场景下的研究重点 。"
+      note: "在详细模块展开之前，先概览当前围绕机械臂控制、强化学习、元学习以及机器视觉在交叉场景下的研究重点。"
     },
     futurePapersSection: {
       eyebrow: "论文发表",
-      title: "已录用及在投工作 "
+      title: "已录用及在投工作",
+      note: "一篇 CCF-B 类会议论文（ICME）已录用，两篇 CCF-B 会议论文在投。"
     },
     systems: {
-      eyebrow: "系统",
-      title: "智能识别与感知系统项目 ",
-      note: "依托视觉深度学习构建的实时监测 Pipeline 。核心成果为准确提取混合料异常高度差与表面形貌 (Attained Results)，为物理控制提供可靠的高精度感知支持 。"
+      eyebrow: "项目",
+      title: "参与项目",
+      note: "涵盖机械臂协同控制、人形机器人全身控制、视觉深度学习及国家级大创项目。"
     },
     modules: {
       eyebrow: "研究模块",
@@ -140,20 +141,21 @@ const uiText = {
     community: {
       eyebrow: "能力",
       title: "荣誉、竞赛与技能",
-      honorsTitle: "代表荣誉",
-      honorsText: "国家励志奖学金 (2025)、中国大学生机械工程创新创意大赛智能制造赛国家级三等奖、全国大学生数学建模竞赛省级二等奖等 。",
-      serviceTitle: "学术与竞赛实践",
-      serviceText: "多次担任国家级、省级学科竞赛团队负责人，主导机械设计、核心算法开发（控制评估模型变量 $S \\in [3, 27]$）及软硬件系统集成工作 。",
-      stackTitle: "技术栈",
-      stackText: "Python、C、PyTorch、MuJoCo、Isaac Gym、Solidworks、CAD、EDEM、Abaqus、TeXstudio 等 。"
+      honorsTitle: "获奖与荣誉",
+      honorsText: "国家励志奖学金、国家/省级学科竞赛奖项等。",
+      serviceTitle: "竞赛实践与项目负责人",
+      serviceText: "多次担任国家级、省级学科竞赛团队负责人，主导机械设计、核心算法开发及软硬件系统集成工作。",
+      stackTitle: "专业技能",
+      stackText: "Python、C、PyTorch、MuJoCo、Isaac Gym、Solidworks、CAD、EDEM、Abaqus、TeXstudio 等。"
     },
     contact: {
       eyebrow: "联系",
-      title: "联系方式"
+      title: "联系方式",
+      text: "欢迎就机械臂控制、强化学习、元学习、具身智能等方向交流合作。"
     },
     filters: {
       all: "全部",
-      deployment: "多臂协同",
+      deployment: "协同控制",
       vla: "人形控制"
     }
   },
@@ -174,9 +176,9 @@ const uiText = {
     },
     hero: {
       eyebrow: "Academic Homepage",
-      subtitle: "Undergraduate Student, School of Mechanical Engineering and Intelligent Equipment, Chang'an University | Research: Embodied Intelligence, Reinforcement Learning, Robot Control",
+      subtitle: "Undergraduate at School of Mechanical Engineering and Intelligent Equipment, Chang'an University | Research: Embodied AI, Reinforcement Learning, Robot Control",
       text:
-        "I am currently an undergraduate student at Chang'an University, majoring in Mechanical Engineering (Transportation Construction and Intelligent Equipment). Working with <a href=\"https://eilab-wanghong.eu.cc/\" target=\"_blank\" rel=\"noopener noreferrer\">EILab</a>, I focus on embodied intelligence and reinforcement-learning-based robot control. My current work centers on multi-arm multimodal manipulation and Sim-to-Real deployment.",
+        "I am currently an undergraduate student at Chang'an University, majoring in Mechanical Engineering (Transportation Construction and Intelligent Equipment). Working with EILab, I focus on embodied intelligence and reinforcement-learning-based robot control. My current work centers on multi-arm multimodal manipulation and Sim-to-Real deployment.",
       viewResearch: "View Research",
       getInTouch: "Get in Touch",
       lab: "Lab",
@@ -184,36 +186,36 @@ const uiText = {
       cv: "Repository",
       email: "Email",
       identityRole: "Undergraduate, EILab",
-      identitySchool: "School of Mechanical Engineering and Intelligent Equipment, Chang'an University",
+      identitySchool: "School of Mechanical Engineering, Chang'an University",
       focusLabel: "Focus",
-      focusValue: "Embodied AI / Reinforcement Learning",
+      focusValue: "Embodied AI / RL / Meta-Learning",
       nowLabel: "Now",
-      nowValue: "Studying embodied intelligence and robot learning",
+      nowValue: "Embodied AI and Robot Learning",
       locationLabel: "Based In",
       locationValue: "Xi'an, Shaanxi, China"
     },
     about: {
       eyebrow: "About",
-      title: "Profile",
+      title: "Research Overview",
       p1:
-        "My research centers on <strong>Embodied Intelligence</strong>, <strong>Reinforcement Learning</strong>, <strong>Meta-Learning</strong>, and <strong>Robot & Humanoid Control</strong>, with a focus on connecting multimodal perception, adaptive policy learning, and highly dynamic agile robot execution.",
+        "My research centers on <strong>Embodied AI</strong>, <strong>Reinforcement Learning</strong>, <strong>Meta-Learning</strong>, and <strong>Deep Learning</strong>, with a focus on connecting multimodal perception, adaptive policy learning, and robotic execution. I deeply participate in embodied intelligence lab projects and national-level innovation training programs.",
       p2:
-        "My current work emphasizes multi-arm real-time coordinated control, whole-body control (WBC) for humanoid robots, visual deep learning analysis in industrial scenarios (e.g. accurate extraction of material pile height differences), and Sim-to-Real deployment. I am committed to deeply integrating mechanical hardware foundations with cutting-edge AI algorithms to build reproducible, scalable intelligent systems for real-world physical environments.",
+        "Publications: one CCF-B conference paper (ICME, accepted), two CCF-B papers under review. My current work emphasizes multi-arm real-time coordinated control via meta-reinforcement learning, whole-body control (WBC) for humanoid robots, and vision-based deep learning for industrial analysis (e.g., material pile height difference perception).",
       interestsTitle: "Research Interests",
       tags: {
         embodied: "Embodied Intelligence",
         rl: "Reinforcement Learning",
         meta: "Meta-Learning",
-        robot: "Robot Manipulation and Control",
+        robot: "Embodied AI & Humanoid Control",
         cv: "Computer Vision and Deep Learning",
         sim2real: "Sim-to-Real"
       }
     },
     multiArm: {
       eyebrow: "Featured Project",
-      note: "My most representative current project, highlighting multi-arm real-time coordinated manipulation, meta-reinforcement learning algorithm design, and high-fidelity simulation environment development.",
+      note: "Meta-reinforcement learning (SAC + MAML) for real-time coordinated control of three UR5 arms. Converges to zero-collision within 20 epochs with latency below 0.6s. Accepted at ICME 2026.",
       badge: "Core Research",
-      overviewTitle: "Real-Time Coordinated Control of Three UR5 Arms Based on Multimodal Meta-Reinforcement Learning (VA-FastNavi-MARL)",
+      overviewTitle: "Real-Time Coordinated Control of Three UR5 Arms via Multi-Modal Meta-Reinforcement Learning (VA-FastNavi-MARL)",
       snapshotTitle: "Project Snapshot",
       pipelineTitle: "Research Pipeline",
       highlightsTitle: "Key Highlights",
@@ -223,7 +225,7 @@ const uiText = {
       focusItem3: "Discrete Phase Flags",
       focusItem4: "Zero-Collision Avoidance",
       galleryTitle: "Project Visuals",
-      galleryNote: "The visuals below cover simulation environment setup, algorithm logic validation, and multi-arm cooperative control. The model converges to zero collision within 20 epochs with response latency below 0.6s.",
+      galleryNote: "Simulation environment setup, algorithm logic validation, and multi-arm cooperative control experiments.",
       media: {
         realKicker: "Coordination",
         realType: "Mechanism",
@@ -249,38 +251,39 @@ const uiText = {
     },
     humanoid: {
       eyebrow: "Research Direction",
-      title: "Humanoid Agile Locomotion and Whole-Body Control (ASAP)",
-      note: "Based on HumanoidVerse and Isaac Gym, focusing on whole-body control (WBC) for high-DoF humanoid robots and Sim-to-Real zero-shot transfer from low-fidelity to high-fidelity environments.",
+      title: "Humanoid Agile Whole-Body Control (ASAP)",
+      note: "Reproducing the ASAP core framework (RSS 2025) using Isaac Gym and PyTorch, achieving Sim-to-Real zero-shot transfer for Unitree G1 humanoid robot.",
       badge: "Research Direction",
-      repo: "Isaac Gym / PyTorch / Unitree G1",
-      overviewTitle: "Current Thesis: Humanoid Agile Locomotion via Deep Reinforcement Learning",
+      repo: "Isaac Gym / PyTorch / Unitree G1 / AMASS",
+      overviewTitle: "Reproducing Agile Humanoid Locomotion via Deep Reinforcement Learning",
       snapshotTitle: "Current Snapshot",
       pipelineTitle: "Progress Path",
       highlightsTitle: "Research Judgments",
       focusLabel: "Current Focus",
       focusItem1: "ASAP Core Framework Reproduction",
-      focusItem2: "PPO + AMASS Dataset",
-      focusItem3: "Unitree G1 Motion Tracking",
-      focusItem4: "Sim-to-Sim/Real Deployment"
+      focusItem2: "PPO + AMASS Motion Tracking",
+      focusItem3: "Unitree G1 Jumping/Throwing",
+      focusItem4: "Sim-to-Sim/Real Zero-Shot Transfer"
     },
     updates: {
       eyebrow: "Updates",
       title: "Research Updates",
-      note: "A compact record of recent academic achievements, including conference paper acceptances (ICME, etc.) and system deployment progress."
+      note: "Recent academic achievements including CCF-B conference paper (ICME) acceptance and system deployment progress."
     },
     research: {
       eyebrow: "Overview",
       title: "Research Direction Overview",
-      note: "A compact overview of current research themes centered on embodied intelligence, reinforcement learning, meta-learning, and computer vision in cross-domain scenarios."
+      note: "An overview of current research themes centered on robot arm control, reinforcement learning, meta-learning, and computer vision."
     },
     futurePapersSection: {
       eyebrow: "Publications",
-      title: "Accepted and Submitted Work"
+      title: "Accepted & Submitted Work",
+      note: "One CCF-B conference paper (ICME) accepted, two CCF-B papers under review."
     },
     systems: {
-      eyebrow: "Systems",
-      title: "Intelligent Perception & Recognition Systems",
-      note: "Real-time monitoring pipeline built on visual deep learning. Core achievement: accurate extraction of abnormal material pile height differences and surface topography (Attained Results), providing reliable high-precision perception support for physical control."
+      eyebrow: "Projects",
+      title: "Research Projects",
+      note: "Covering multi-arm coordinated control, humanoid whole-body control, visual deep learning, and national innovation training projects."
     },
     modules: {
       eyebrow: "Modules",
@@ -292,18 +295,19 @@ const uiText = {
       title: "Background"
     },
     community: {
-      eyebrow: "Community",
-      title: "Honors, Competitions & Skills",
-      honorsTitle: "Selected Honors",
-      honorsText: "National Endeavor Scholarship (2025), National Third Prize in China University Mechanical Engineering Innovation and Creativity Competition (Intelligent Manufacturing), Provincial Second Prize in National College Mathematical Contest in Modeling.",
-      serviceTitle: "Academic and Competition Practice",
-      serviceText: "Served as team lead for national and provincial academic competitions, leading mechanical design, core algorithm development (control evaluation model variable $S \\in [3, 27]$), and software-hardware system integration.",
-      stackTitle: "Technical Stack",
+      eyebrow: "Achievements",
+      title: "Honors, Awards & Skills",
+      honorsTitle: "Awards & Honors",
+      honorsText: "National Endeavor Scholarship, national/provincial competition awards, and academic recognition.",
+      serviceTitle: "Competition Leadership",
+      serviceText: "Served as team lead for national and provincial academic competitions, leading mechanical design, core algorithm development, and software-hardware system integration.",
+      stackTitle: "Professional Skills",
       stackText: "Python, C, PyTorch, MuJoCo, Isaac Gym, Solidworks, CAD, EDEM, Abaqus, TeXstudio."
     },
     contact: {
       eyebrow: "Contact",
-      title: "Contact"
+      title: "Contact",
+      text: "Open to collaboration on robot arm control, reinforcement learning, meta-learning, and embodied intelligence."
     },
     filters: {
       all: "All",
@@ -317,29 +321,29 @@ const localeData = {
   zh: {
     newsItems: [
       {
-        date: "2026.04",
-        title: "VLA 专题页与首页入口完成联动",
-        description: "将首页 VLA 模块收敛为“当前主线 + 推进路线”的入口，并单独整理层级式 speculative VLA 专题页。"
+        date: "2026.05",
+        title: "摊铺机料斗抗离析装置 — 国家级大创项目结题",
+        description: "基于结构光相机 3D 点云与 YOLO 的沥青混合料状态实时监测 Pipeline 开发完成。"
       },
       {
         date: "2026.03",
-        title: "VLA 主线收敛到层级式 speculative 框架",
-        description: "当前判断聚焦高层语义推理加速，优先验证 latency、replan 次数与长时程成功率。"
+        title: "CCF-B 会议论文 ICME 录用",
+        description: "基于多模态元强化学习的机械臂实时协同控制研究（VA-FastNavi-MARL）被 ICME 2026 录用。"
       },
       {
-        date: "2026.02",
-        title: "AdaMoE 与 OpenVLA-OFT 工程链路跑通",
-        description: "完成基础接入、mix4 训练链路和恢复逻辑整理，为后续 action-head 与 speculative 主线提供工程基座。"
+        date: "2026.03",
+        title: "两篇 CCF-B 会议论文在投",
+        description: "两篇围绕多机械臂协同控制与双机械臂避障论文正在投稿流程中。"
       },
       {
-        date: "2026.01",
-        title: "双臂 Sim-to-Real 平台继续完善",
-        description: "围绕 Dual_Arm_UR5 持续推进 MuJoCo、PPO、ROS 2 / MoveIt 与感知部署链路，作为后续具身研究的系统基础。"
+        date: "2025.08",
+        title: "ASAP 人形机器人敏捷控制复现完成",
+        description: "在 Isaac Gym 上完成 ASAP 核心框架复现，成功在 Unitree G1 实机上部署跳投、跳跃等动作。"
       }
     ],
     featuredProject: {
       summary:
-        "Dual_Arm_UR5 是我当前研究组合中的核心项目，围绕双臂 UR5 建立了从物理建模、任务空间控制，到 PPO 学习、ROS 2 / MoveIt 集成、感知模块接入与真实系统部署的完整实验平台。该平台也为后续面向 VLA 的机器人操作研究提供了稳定的系统基础。",
+        "基于多模态元强化学习的机械臂实时协同控制研究（VA-FastNavi-MARL）是我最具代表性的项目。在 VS Code 环境下基于 Python 开发，利用 MuJoCo 物理引擎搭建了包含三台 UR5 机械臂的高保真协同控制仿真工作空间。开发基于 SAC 与 MAML 框架的元强化学习控制器，实现三台机械臂对不同指令任务的快速自适应。在噪声与视觉遮挡压测下验证系统性能，模型在 20 个 Epoch 内收敛至零碰撞，响应延迟低于 0.6 秒。以共一作者身份发表学术论文并成功被 ICME 录用。",
       links: [
         { label: "项目仓库", url: "https://github.com/zx2002430/Dual_Arm_UR5" },
         { label: "Base 分支", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Base" },
@@ -347,145 +351,158 @@ const localeData = {
         { label: "Sim-To-Real", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Sim-To-Real" }
       ],
       metrics: [
-        { label: "机器人平台", value: "双臂 UR5" },
-        { label: "学习方法", value: "PPO" },
+        { label: "机器人平台", value: "三台 UR5 机械臂" },
+        { label: "算法框架", value: "SAC + MAML" },
         { label: "仿真环境", value: "MuJoCo" },
-        { label: "部署框架", value: "ROS 2 + MoveIt" }
+        { label: "成果", value: "ICME 2026 录用" }
       ],
       pipeline: [
         {
-          stage: "仿真",
-          detail: "建立双臂 UR5 的 MuJoCo XML 与 ROS 2 URDF，完成动力学建模、任务空间 PID 与轨迹跟踪。"
+          stage: "仿真搭建",
+          detail: "在 VS Code 环境下基于 Python，利用 MuJoCo 物理引擎搭建三台 UR5 机械臂的高保真协同控制仿真工作空间。"
         },
         {
-          stage: "学习",
-          detail: "构建自定义 Gymnasium 环境，设计状态表示、动作空间与奖励函数，并使用 Stable-Baselines3 PPO 训练。"
+          stage: "算法开发",
+          detail: "开发基于 SAC 与 MAML 框架的元强化学习控制器，实现三台机械臂对不同指令任务的快速自适应。"
         },
         {
-          stage: "部署",
-          detail: "连接策略推理、安全状态机、MoveIt、控制器与真实双臂 UR5 平台，推进 Sim-to-Real 实验。"
+          stage: "验证压测",
+          detail: "在噪声与视觉遮挡压测下验证系统性能，20 个 Epoch 内收敛至零碰撞，响应延迟低于 0.6 秒。"
         },
         {
-          stage: "感知",
-          detail: "集成 RGB-D 感知、YOLO 目标检测、2D 到 3D 定位与手眼标定，支撑感知驱动任务。"
+          stage: "论文发表",
+          detail: "以共一作者身份发表学术论文并成功被国际学术会议 ICME 录用（CCF-B 类）。"
         }
       ],
       highlights: [
-        "围绕真实双臂 UR5 平台组织研究，而不是单一算法演示。",
-        "在同一系统中打通经典控制、强化学习与真实部署。",
-        "兼顾仿真验证与真实机器人执行链路。",
-        "为后续语言条件操作和 VLA 扩展提供系统基础。"
+        "基于 SAC + MAML 的元强化学习框架，实现多机械臂实时协同控制。",
+        "离散相位标志（0, 1, 2）精确授权 Active Agent，实现高效无缝切换。",
+        "噪声与视觉遮挡极端环境压测下仍保持零碰撞。",
+        "CCF-B 类会议论文（ICME）已录用。"
       ]
     },
     vlaDirection: {
       summary:
-        "当前这条方向已经从通用 VLA 介绍收敛到更具体的主线：基于 OpenVLA-OFT 与 AdaMoE，优先推进层级式 speculative VLA，目标是在高层语义推理上加速，同时保持低层闭环执行的稳定性。",
+        "基于 Isaac Gym 与 PyTorch 复现 RSS 2025 论文 ASAP 核心框架，实现从低保真仿真到高保真环境（Sim-to-Sim/Real）的零样本迁移。面向高维度人形机器人的全身控制（WBC）任务，运用 PPO 强化学习算法结合 AMASS 数据集完成动作追踪训练。依托 HumanoidVerse 仿真平台，成功在 Unitree G1 人形机器人模型上部署并复现跳投、跳跃等高动态敏捷运动。",
       links: [
         { label: "EILab", url: "https://eilab-wanghong.eu.cc/" },
         { label: "GitHub 主页", url: "https://github.com/zx2002430" },
         { label: "联系方式", url: "#contact" }
       ],
       metrics: [
-        { label: "当前主线", value: "Hierarchical Speculative VLA" },
-        { label: "工程基座", value: "OpenVLA-OFT + AdaMoE" },
-        { label: "执行层", value: "闭环动作执行" },
-        { label: "下一步", value: "Long-Horizon Eval" }
+        { label: "方法框架", value: "ASAP + PPO" },
+        { label: "仿真平台", value: "Isaac Gym + HumanoidVerse" },
+        { label: "机器人", value: "Unitree G1" },
+        { label: "数据集", value: "AMASS" }
       ],
       pipeline: [
         {
-          stage: "工程接入",
-          detail: "完成 AdaMoE 接入、mix4 训练链路和基础恢复逻辑。"
+          stage: "框架复现",
+          detail: "在湖北大学具身智能实验室基于 Isaac Gym 与 PyTorch 复现 ASAP (RSS 2025) 核心框架。"
         },
         {
-          stage: "主线收敛",
-          detail: "从 backbone-tail MoE 收敛到高层 speculative + 低层保守执行。"
+          stage: "训练实验",
+          detail: "运用 PPO 算法结合 AMASS 数据集完成动作追踪训练，面向高维度 WBC 任务。"
         },
         {
-          stage: "实验推进",
-          detail: "优先验证 latency、replan 次数与长时程成功率。"
+          stage: "部署验证",
+          detail: "在 HumanoidVerse 上成功部署 Unitree G1，复现跳投、跳跃等高动态敏捷运动。"
+        },
+        {
+          stage: "迁移验证",
+          detail: "验证从低保真仿真到高保真环境（Sim-to-Sim/Real）的零样本迁移能力。"
         }
       ],
       highlights: [
-        "首页只保留主线判断，细节进入专题页展开。",
-        "先验证高层加速，再讨论低层连续动作 speculative。",
-        "与双臂 Sim-to-Real 系统可以自然衔接。",
-        "适合作为当前论文主线，而不是泛泛的 VLA 展示。"
+        "复现 RSS 2025 顶会论文 ASAP 核心框架。",
+        "PPO + AMASS 数据集实现 Unitree G1 动作追踪。",
+        "成功复现跳投、跳跃等高动态运动。",
+        "Sim-to-Sim/Real 零样本迁移验证。"
       ]
     },
     overviewPublications: [
       {
-        title: "融合 RGB-D 感知的双臂 Sim-to-Real 控制",
-        authors: "景晟熙",
-        venue: "研究主线 | Sim-to-Real",
+        title: "基于多模态元强化学习的机械臂实时协同控制研究 (VA-FastNavi-MARL)",
+        authors: "景晟熙（共一作者）",
+        venue: "ICME 2026（CCF-B 类会议，已录用）",
         type: "Deployment",
-        highlight: "ROS 2 + MoveIt + YOLO + 手眼标定",
-        summary: "围绕双臂 UR5 平台组织的一条完整 Sim-to-Real 研究主线，覆盖 Base 建模、强化学习、真实部署与感知标定。",
+        highlight: "SAC + MAML + MuJoCo + 三臂协同",
+        summary: "利用 MuJoCo 搭建三台 UR5 高保真仿真环境，基于 SAC 与 MAML 框架的元强化学习控制器实现多机械臂协同控制与快速自适应。在噪声与视觉遮挡压测下 20 Epoch 收敛至零碰撞，延迟低于 0.6 秒。",
         links: [
-          { label: "仓库", url: "https://github.com/zx2002430/Dual_Arm_UR5" },
-          { label: "Sim-To-Real", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Sim-To-Real" }
+          { label: "项目主页", url: "#featured-project" }
         ]
       },
       {
-        title: "面向具身操作的 Vision-Language-Action",
+        title: "人形机器人敏捷全身控制算法复现 (ASAP)",
         authors: "景晟熙",
-        venue: "进行中的研究方向",
+        venue: "RSS 2025 论文复现｜Isaac Gym + PyTorch",
         type: "VLA",
-        highlight: "多模态对齐 + 动作生成",
-        summary: "探索将视觉观测与语言指令映射到机器人动作的 VLA 风格策略，用于具身操作与任务执行。",
+        highlight: "PPO + AMASS + Unitree G1 + Sim-to-Real",
+        summary: "基于 Isaac Gym 与 PyTorch 复现 ASAP 核心框架，运用 PPO 强化学习配合 AMASS 数据集实现 Unitree G1 人形机器人的动作追踪与全身控制，验证 Sim-to-Real 零样本迁移。",
         links: [
           { label: "实验室", url: "https://eilab-wanghong.eu.cc/" },
           { label: "GitHub", url: "https://github.com/zx2002430" }
         ]
       },
-    ],
-    simToRealBreakdown: [
       {
-        title: "Base：双臂 UR5 建模与控制基础",
+        title: "基于视觉深度学习的网络开发 — 医学图像分割",
         authors: "景晟熙",
-        venue: "Sim-to-Real 组成部分 | Base",
-        type: "Deployment",
-        highlight: "MuJoCo + ROS 2 + 任务空间控制",
-        summary: "负责双臂 UR5 的系统建模、MuJoCo 环境搭建、ROS 2 描述与任务空间控制，是整条链路的系统基础。",
+        venue: "Kaggle Vessel Segmentation Top 17%",
+        type: "VLA",
+        highlight: "VGGNet + U-Net + YOLO + Dice Loss",
+        summary: "依托 PyTorch 构建端到端医学图像分析 Pipeline，对比 VGGNet、U-Net、YOLO 等多尺度模型。将 VGGNet 作为 Backbone 融入分割架构，结合 Dice Loss 与交叉熵联合损失，在 Kaggle Vessel Segmentation 数据集上斩获 Top 17%。",
         links: [
-          { label: "仓库", url: "https://github.com/zx2002430/Dual_Arm_UR5" },
-          { label: "Base 分支", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Base" }
+          { label: "Kaggle", url: "https://www.kaggle.com/" }
         ]
       },
       {
-        title: "RL：双臂强化学习训练链路",
-        authors: "景晟熙",
-        venue: "Sim-to-Real 组成部分 | RL",
+        title: "摊铺机料斗抗离析装置研制（国家级大创项目）",
+        authors: "景晟熙（主导智能识别与感知系统）",
+        venue: "国家级大学生创新训练项目 | 2024-2026",
         type: "Deployment",
-        highlight: "PPO + Gymnasium + Stable-Baselines3",
-        summary: "基于自定义环境构建 PPO 训练、评估与轨迹分析流程，为双臂协同任务提供学习策略。",
+        highlight: "结构光相机 3D 点云 + YOLOv8 + 实时监测",
+        summary: "主导开发\"智能识别与感知系统\"，深度融合结构光相机 3D 点云与 YOLOv8 目标检测算法，重构料堆特征提取网络，实现对混合料异常高度差与表面形貌的实时高精度感知。",
         links: [
-          { label: "仓库", url: "https://github.com/zx2002430/Dual_Arm_UR5" },
-          { label: "RL 分支", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/RL-Algorithm" }
-        ]
-      },
-      {
-        title: "Deployment：真实双臂部署链路",
-        authors: "景晟熙",
-        venue: "Sim-to-Real 组成部分 | Deployment",
-        type: "Deployment",
-        highlight: "MoveIt + 控制器 + 状态机",
-        summary: "连接策略推理、MoveIt、控制器与真实双臂平台，形成从仿真到真机执行的部署闭环。",
-        links: [
-          { label: "Sim-To-Real", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Sim-To-Real" }
-        ]
-      },
-      {
-        title: "Perception：感知与标定模块",
-        authors: "景晟熙",
-        venue: "Sim-to-Real 组成部分 | Perception",
-        type: "Deployment",
-        highlight: "RGB-D + YOLO + 手眼标定",
-        summary: "集成 RGB-D 感知、YOLO 检测、2D-3D 定位与手眼标定，为真实环境中的感知驱动操作做准备。",
-        links: [
-          { label: "Sim-To-Real", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Sim-To-Real" }
+          { label: "项目详情", url: "#projects" }
         ]
       }
     ],
+    simToRealBreakdown: [
+      {
+        title: "VA-FastNavi-MARL: 三机械臂实时协同控制",
+        authors: "景晟熙（共一作者）",
+        venue: "ICME 2026（CCF-B） | MuJoCo + SAC + MAML",
+        type: "Deployment",
+        highlight: "MuJoCo + SAC + MAML + 三臂协同",
+        summary: "基于多模态元强化学习（SAC + MAML）的三台 UR5 机械臂实时协同控制系统。在 VS Code 环境下基于 Python 开发，利用 MuJoCo 搭建高保真仿真环境。模型在 20 个 Epoch 内收敛至零碰撞，响应延迟低于 0.6 秒。",
+        links: [
+          { label: "项目详情", url: "#featured-project" }
+        ]
+      },
+      {
+        title: "摊铺机料斗抗离析装置研制（国家级大创项目）",
+        authors: "景晟熙（主导智能识别与感知系统）",
+        venue: "国家级大学生创新训练项目 | 2024-2026",
+        type: "Deployment",
+        highlight: "结构光相机 3D 点云 + YOLOv8 + 实时监测",
+        summary: "主导开发\"智能识别与感知系统\"，构建基于机器视觉的沥青混合料状态实时监测 Pipeline。深度融合结构光相机 3D 点云数据与 YOLOv8 目标检测算法，重构料堆特征提取网络。",
+        links: [
+          { label: "项目详情", url: "#projects" }
+        ]
+      }
+    ],
+    vlaPublication: {
+      title: "基于 Isaac Gym 的人形机器人敏捷全身控制算法复现 (ASAP)",
+      authors: "景晟熙",
+      venue: "RSS 2025 论文复现 | Isaac Gym + PyTorch",
+      type: "VLA",
+      highlight: "PPO + AMASS + Unitree G1 + Sim-to-Real",
+      summary: "在湖北大学具身智能实验室基于 Isaac Gym 与 PyTorch 复现 RSS 2025 论文 ASAP 核心框架。运用 PPO 强化学习算法结合 AMASS 数据集完成动作追踪训练，在 Unitree G1 人形机器人模型上部署并复现跳投、跳跃等高动态敏捷运动。",
+      links: [
+        { label: "实验室", url: "https://eilab-wanghong.eu.cc/" },
+        { label: "GitHub", url: "https://github.com/zx2002430" }
+      ]
+    },
     vlaPublication: {
       title: "面向具身操作的 Vision-Language-Action",
       authors: "景晟熙",
@@ -500,109 +517,129 @@ const localeData = {
     },
     futurePapers: [
       {
-        title: "面向双臂 UR5 的感知驱动 Sim-to-Real 操作系统与真实部署验证",
-        status: "方向成型",
-        track: "Sim-to-Real",
-        venue: "IROS / IEEE RA-L",
-        summary: "拟围绕 Dual_Arm_UR5 平台整理一篇系统型论文，把 MuJoCo 建模、PPO 训练、ROS 2 / MoveIt 部署、RGB-D 感知与真机执行整合为同一条双臂 Sim-to-Real 研究链路。",
-        contribution: "预计贡献包括一个可复现的双臂操作系统基座、一套感知驱动的真实部署流程，以及面向双臂任务的真机实验验证。",
+        title: "基于多模态元强化学习的机械臂实时协同控制（VA-FastNavi-MARL）",
+        status: "已录用",
+        track: "Multi-Arm Coordination",
+        venue: "ICME 2026（CCF-B 类会议）",
+        summary: "利用 MuJoCo 物理引擎搭建三台 UR5 机械臂的高保真仿真环境，开发基于 SAC 与 MAML 框架的元强化学习控制器，实现三台机械臂对不同指令任务的快速自适应。在噪声与视觉遮挡压测下验证系统性能。",
         links: [
-          { label: "Dual_Arm_UR5", url: "https://github.com/zx2002430/Dual_Arm_UR5" },
-          { label: "Sim-To-Real", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Sim-To-Real" }
-        ]
-      },
-      {
-        title: "层级式 Speculative Vision-Language-Action 用于具身双臂操作",
-        status: "主线收敛",
-        track: "VLA",
-        venue: "CoRL / ICRA",
-        summary: "拟围绕当前已经收敛的层级式 speculative VLA 主线，研究如何在高层语义子任务空间提升推理与重规划效率，同时保持低层连续动作执行的稳定性。",
-        contribution: "预计贡献包括面向 VLA 的层级式 speculative 框架、高层 verification 与 acceptance 设计，以及 latency、replan 频率和长时程成功率的实验验证。",
-        links: [
-          { label: "Research", url: "#publications" }
+          { label: "论文链接", url: "assets/docs/pdf/2604.03998v1.pdf" }
         ]
       },
     ],
     projects: [
       {
-        title: "Dual_Arm_UR5",
-        meta: "双臂操作 | MuJoCo | ROS 2 | 强化学习",
-        description: "主研究系统，覆盖建模、控制、学习与部署的完整双臂 UR5 操作链路。",
+        title: "VA-FastNavi-MARL: 三机械臂实时协同控制",
+        meta: "MuJoCo | SAC | MAML | ICME 录用",
+        description: "基于多模态元强化学习（SAC + MAML）的三台 UR5 机械臂实时协同控制系统。在 VS Code 环境下基于 Python 开发，搭建高保真仿真环境，实现不同指令任务的快速自适应。20 Epoch 内收敛至零碰撞，延迟低于 0.6 秒。",
         links: [
-          { label: "GitHub 仓库", url: "https://github.com/zx2002430/Dual_Arm_UR5" },
-          { label: "README", url: "https://github.com/zx2002430/Dual_Arm_UR5" }
+          { label: "详细信息", url: "#featured-project" },
+          { label: "实验室", url: "https://eilab-wanghong.eu.cc/" }
         ]
       },
       {
-        title: "RL-Algorithm 分支",
-        meta: "PPO | Gymnasium | Stable-Baselines3",
-        description: "面向双臂协同任务的强化学习训练与评估分支。",
+        title: "ASAP: 人形机器人敏捷全身控制",
+        meta: "Isaac Gym | PyTorch | PPO | AMASS | Unitree G1",
+        description: "复现 RSS 2025 论文 ASAP 核心框架，实现 Unitree G1 人形机器人的跳投、跳跃等高动态敏捷运动，完成从低保真到高保真环境的零样本迁移验证。",
         links: [
-          { label: "分支链接", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/RL-Algorithm" }
-        ]
-      },
-      {
-        title: "Sim-To-Real 分支",
-        meta: "真机 | MoveIt | RGB-D | YOLO",
-        description: "面向真实双臂平台的感知、规划与执行部署分支。",
-        links: [
-          { label: "分支链接", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Sim-To-Real" }
-        ]
-      },
-      {
-        title: "VLA Policy Prototyping",
-        meta: "Vision-Language-Action | 具身策略 | 机器人执行",
-        description: "面向语言条件操作与未来真实部署的 VLA 风格具身策略原型方向。",
-        links: [
-          { label: "实验室主页", url: "https://eilab-wanghong.eu.cc/" },
+          { label: "实验室", url: "https://eilab-wanghong.eu.cc/" },
           { label: "GitHub 主页", url: "https://github.com/zx2002430" }
+        ]
+      },
+      {
+        title: "基于视觉深度学习的医学图像分割",
+        meta: "PyTorch | VGGNet | U-Net | YOLO | Dice Loss",
+        description: "构建端到端医学图像分析 Pipeline，对比多尺度视觉模型。将 VGGNet 作为 Backbone 融入分割架构，结合优化后的 Dice Loss 与交叉熵联合损失函数。在 Kaggle Vessel Segmentation 数据集上斩获 Top 17%。",
+        links: [
+          { label: "Kaggle", url: "https://www.kaggle.com/" }
+        ]
+      },
+      {
+        title: "摊铺机料斗抗离析装置（国家级大创项目）",
+        meta: "结构光相机 | 3D 点云 | YOLOv8 | 实时监测",
+        description: "主导开发\"智能识别与感知系统\"，深度融合结构光相机 3D 点云数据与 YOLOv8 目标检测算法，重构料堆特征提取网络，实现对沥青混合料异常高度差与表面形貌的实时高精度感知。",
+        links: [
+          { label: "项目详情", url: "#projects" }
         ]
       },
     ],
     experiences: [
       {
-        title: "湖北大学",
-        subtitle: "人工智能专业研究生，2024 - 至今",
-        detail: "在 EILab 开展 VLA、具身智能、强化学习与机械臂操作相关研究。"
+        title: "长安大学 （211/双一流高校）",
+        subtitle: "机械工程与智能装备学院 · 机械工程（交通建设与智能装备） · 工学学士 | 2023.09 – 2027.06",
+        detail: "GPA: 3.65/5.0（专业排名 7/59），位于陕西西安。主修课程：高等数学（92）、复变函数与积分变换（95）、概率论与数理统计（93）、材料力学（91）、互换性与技术测量（91）、机械控制工程（92）、流体力学与液压传动（92）、机械设计（93）。"
       },
       {
-        title: "研究兴趣",
-        subtitle: "VLA / 具身智能 / 强化学习 / 机器人学习",
-        detail: "关注多模态感知、语言对齐、策略学习与稳健的机器人执行。"
+        title: "EILab 具身智能实验室",
+        subtitle: "深度参与科研项目 | 2025 – 至今",
+        detail: "深度参与具身智能实验室项目，研究方向包括多机械臂协同操作、元强化学习算法设计、人形机器人全身控制及 Sim-to-Real 部署。"
       },
       {
-        title: "当前重点",
-        subtitle: "系统平台与研究组合",
-        detail: "围绕双臂操作系统与 VLA 具身策略方向构建可复现的研究成果。"
+        title: "国家级大学生创新训练项目",
+        subtitle: "摊铺机料斗抗离析装置研制 | 2024 – 2026",
+        detail: "主导开发\"智能识别与感知系统\"，基于机器视觉实现沥青混合料状态实时监测。"
       }
+    ],
+    courseData: [
+      { name: "高等数学", grade: "92" },
+      { name: "复变函数与积分变换", grade: "95" },
+      { name: "概率论与数理统计", grade: "93" },
+      { name: "材料力学", grade: "91" },
+      { name: "互换性与技术测量", grade: "91" },
+      { name: "机械控制工程", grade: "92" },
+      { name: "流体力学与液压传动", grade: "92" },
+      { name: "机械设计", grade: "93" }
+    ],
+    awardData: [
+      { title: "国家励志奖学金", year: "2025", level: "国家级" },
+      { title: "长安大学机械工程与智能装备学院孙祖望助学金", year: "2024", level: "院级" },
+      { title: "中国大学生机械工程创新创意大赛智能制造赛智能装备与产线应用（国家级）, 三等奖", year: "2025", level: "国家级", role: "负责人" },
+      { title: "中国大学生机械工程创新创意大赛智能制造赛区域选拔赛智能装备与产线开发（省级）, 三等奖", year: "2025", level: "省级" },
+      { title: "第三届西北赛区大学生物理实验竞赛（省级）, 三等奖", year: "2025", level: "省级", role: "负责人" },
+      { title: "全国大学生数学建模竞赛陕西赛区（省级）, 二等奖", year: "2025", level: "省级", role: "负责人" },
+      { title: "第十六届全国大学生数学竞赛（省级）, 三等奖", year: "2024", level: "省级" },
+      { title: "第十七届全国大学生数学竞赛（省级）, 三等奖", year: "2025", level: "省级" }
+    ],
+    competitionData: [
+      { name: "中国大学生机械工程创新创意大赛智能制造赛", level: "国家级三等奖", role: "负责人, 负责机械设计与核心算法开发" },
+      { name: "第三届西北赛区大学生物理实验竞赛", level: "省级三等奖", role: "负责人, 负责实验设计与软硬件集成" },
+      { name: "全国大学生数学建模竞赛陕西赛区", level: "省级二等奖", role: "负责人, 负责建模与算法设计" },
+      { name: "全国大学生数学竞赛", level: "省级三等奖（第十六届、第十七届）", role: "参赛" }
+    ],
+    skillData: [
+      { category: "编程语言", items: ["Python (熟悉)", "C (熟悉)"] },
+      { category: "研究领域", items: ["强化学习", "深度学习", "机械臂控制", "人形机器人"] },
+      { category: "专业软件", items: ["Solidworks", "CAD", "EDEM", "Abaqus", "TeXstudio", "Process Simulate"] },
+      { category: "英语水平", items: ["大学英语四级 (CET-4)"] },
+      { category: "技能证书", items: ["计算机三级网络技术"] }
     ]
   },
   en: {
     newsItems: [
       {
-        date: "2026.04",
-        title: "Homepage and VLA research page now work as one entry flow",
-        description: "The homepage VLA block now serves as a thesis-level entry, while a dedicated page expands the hierarchical speculative VLA plan."
+        date: "2026.05",
+        title: "National Innovation Project Completed — Asphalt Paving Anti-Segregation Device",
+        description: "Completed real-time monitoring pipeline for asphalt mixture using structured-light 3D point cloud and YOLO."
       },
       {
         date: "2026.03",
-        title: "VLA mainline converged to a hierarchical speculative frame",
-        description: "The current focus is high-level semantic acceleration, with evaluation centered on latency, replanning frequency, and long-horizon success rate."
+        title: "CCF-B Paper Accepted at ICME 2026",
+        description: "Research on multi-modal meta-reinforcement learning for real-time coordinated robot arm control (VA-FastNavi-MARL) accepted at ICME 2026 as co-first author."
       },
       {
-        date: "2026.02",
-        title: "AdaMoE and OpenVLA-OFT engineering path completed",
-        description: "Finished the core integration, mix4 training flow, and recovery logic as the engineering base for later action-head and speculative experiments."
+        date: "2026.03",
+        title: "Two CCF-B Conference Papers Under Review",
+        description: "Two CCF-B papers on multi-arm coordinated control and dual-arm collision avoidance currently under review."
       },
       {
-        date: "2026.01",
-        title: "Dual-arm Sim-to-Real platform kept expanding",
-        description: "Continued improving the Dual_Arm_UR5 stack across MuJoCo, PPO, ROS 2 / MoveIt, and perception-driven deployment as the systems base for future embodied work."
+        date: "2025.08",
+        title: "ASAP Agile Humanoid Control Reproduction Completed",
+        description: "Reproduced the ASAP core framework on Isaac Gym, successfully deploying jumping and throwing motions on real Unitree G1 hardware."
       }
     ],
     featuredProject: {
       summary:
-        "Dual_Arm_UR5 is the core project in my current research portfolio. It covers the full path from physical modeling and task-space control to PPO learning, ROS 2 / MoveIt integration, perception modules, and real-system deployment. The platform also serves as a stable systems foundation for future VLA-oriented manipulation research.",
+        "VA-FastNavi-MARL is my most representative project. Built in VS Code with Python on MuJoCo, it creates a high-fidelity simulation workspace for three UR5 arms with coordinated control. A meta-reinforcement learning controller based on SAC + MAML achieves fast adaptation across different instruction tasks. Under noise and visual occlusion stress tests, the model converges to zero collision within 20 epochs with latency below 0.6s. The paper was accepted at ICME 2026 (CCF-B) as co-first author.",
       links: [
         { label: "GitHub Repo", url: "https://github.com/zx2002430/Dual_Arm_UR5" },
         { label: "Base", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Base" },
@@ -610,152 +647,153 @@ const localeData = {
         { label: "Sim-To-Real", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Sim-To-Real" }
       ],
       metrics: [
-        { label: "Robot Setup", value: "Dual UR5" },
-        { label: "Learning Method", value: "PPO" },
+        { label: "Robot Setup", value: "Three UR5 Arms" },
+        { label: "Algorithm", value: "SAC + MAML" },
         { label: "Simulation", value: "MuJoCo" },
-        { label: "Deployment Stack", value: "ROS 2 + MoveIt" }
+        { label: "Achievement", value: "Accepted at ICME 2026" }
       ],
       pipeline: [
         {
-          stage: "Simulation",
-          detail: "Built dual-arm UR5 models in MuJoCo XML and ROS 2 URDF, including dynamics modeling, task-space PID, and trajectory tracking."
+          stage: "Simulation Setup",
+          detail: "Built a high-fidelity three-UR5 arm coordinated control simulation workspace using MuJoCo physics engine, developed in VS Code with Python."
         },
         {
-          stage: "Learning",
-          detail: "Designed a custom Gymnasium environment, state representation, action space, and reward function, then trained with Stable-Baselines3 PPO."
+          stage: "Algorithm Development",
+          detail: "Developed a meta-reinforcement learning controller based on SAC and MAML frameworks for fast adaptation across diverse instruction tasks."
         },
         {
-          stage: "Deployment",
-          detail: "Connected policy inference, safety state machines, MoveIt, controllers, and the real dual-arm UR5 platform for Sim-to-Real experiments."
+          stage: "Stress Testing",
+          detail: "Validated system performance under noise and visual occlusion — converges to zero collision within 20 epochs with response latency below 0.6s."
         },
         {
-          stage: "Perception",
-          detail: "Integrated RGB-D sensing, YOLO-based object detection, 2D-to-3D localization, and hand-eye calibration for perception-guided tasks."
+          stage: "Publication",
+          detail: "Co-first author paper accepted at ICME 2026 (CCF-B conference)."
         }
       ],
       highlights: [
-        "Organized around a real dual-arm UR5 platform rather than a single algorithm demo.",
-        "Bridges classical control, reinforcement learning, and real-world deployment in one system.",
-        "Supports both simulation validation and real robot execution.",
-        "Provides a strong foundation for future language-conditioned and VLA-style manipulation."
+        "SAC + MAML meta-RL framework enabling real-time multi-arm coordinated control.",
+        "Discrete phase flags (0, 1, 2) for precise Active Agent authorization with seamless switching.",
+        "Maintains zero collision even under extreme noise and visual occlusion stress tests.",
+        "CCF-B conference paper (ICME) accepted."
       ]
     },
     vlaDirection: {
       summary:
-        "This track is no longer presented as a generic VLA overview. It is now framed around a more specific thesis: building a hierarchical speculative VLA pipeline on top of OpenVLA-OFT and AdaMoE, aiming to speed up high-level semantic reasoning while preserving stable low-level closed-loop execution.",
+        "Reproduced the ASAP core framework (RSS 2025) using Isaac Gym and PyTorch, achieving zero-shot Sim-to-Sim/Real transfer. Applied PPO reinforcement learning with the AMASS dataset for motion tracking on high-dimensional whole-body control (WBC) tasks. Using the HumanoidVerse platform, successfully deployed and reproduced high-dynamic agile motions including jumping and throwing on the Unitree G1 humanoid robot model.",
       links: [
         { label: "EILab", url: "https://eilab-wanghong.eu.cc/" },
         { label: "GitHub Profile", url: "https://github.com/zx2002430" },
         { label: "Contact", url: "#contact" }
       ],
       metrics: [
-        { label: "Current Thesis", value: "Hierarchical Speculative VLA" },
-        { label: "Engineering Base", value: "OpenVLA-OFT + AdaMoE" },
-        { label: "Execution Layer", value: "Closed-loop Control" },
-        { label: "Next Step", value: "Long-Horizon Eval" }
+        { label: "Framework", value: "ASAP + PPO" },
+        { label: "Simulation", value: "Isaac Gym + HumanoidVerse" },
+        { label: "Robot", value: "Unitree G1" },
+        { label: "Dataset", value: "AMASS" }
       ],
       pipeline: [
         {
-          stage: "Engineering",
-          detail: "Finish AdaMoE integration, mix4 training flow, and recovery logic on OpenVLA-OFT."
+          stage: "Reproduction",
+          detail: "Reproduced ASAP (RSS 2025) core framework using Isaac Gym and PyTorch at EILab, Hubei University."
         },
         {
-          stage: "Convergence",
-          detail: "Move from backbone-tail MoE toward high-level speculative reasoning with conservative low-level execution."
+          stage: "Training",
+          detail: "Applied PPO with AMASS dataset for motion tracking on high-dimensional WBC tasks."
         },
         {
-          stage: "Evaluation",
-          detail: "Prioritize latency, replanning frequency, and long-horizon success rate."
+          stage: "Deployment",
+          detail: "Successfully deployed on Unitree G1 via HumanoidVerse, reproducing jumping, throwing, and other agile motions."
+        },
+        {
+          stage: "Transfer",
+          detail: "Validated zero-shot transfer from low-fidelity simulation to high-fidelity environments (Sim-to-Sim/Real)."
         }
       ],
       highlights: [
-        "The homepage only keeps the thesis-level judgment, while the research page expands the details.",
-        "High-level acceleration comes first; low-level speculative control stays as a follow-up topic.",
-        "The track connects naturally with the existing dual-arm Sim-to-Real system work.",
-        "This is framed as a paper-ready mainline rather than a generic VLA showcase."
+        "Reproduced RSS 2025 ASAP core framework.",
+        "PPO + AMASS dataset for Unitree G1 motion tracking.",
+        "Successfully reproduced jumping, throwing, and other agile motions.",
+        "Sim-to-Sim/Real zero-shot transfer validated."
       ]
     },
     overviewPublications: [
       {
-        title: "Sim-to-Real Dual-Arm Control with RGB-D Perception",
-        authors: "Shengxi Jing",
-        venue: "Research Track | Sim-to-Real",
+        title: "Real-Time Coordinated Control of Robot Arms via Multi-Modal Meta-Reinforcement Learning (VA-FastNavi-MARL)",
+        authors: "Shengxi Jing (co-first author)",
+        venue: "ICME 2026 (CCF-B Conference, Accepted)",
         type: "Deployment",
-        highlight: "ROS 2 + MoveIt + YOLO + Hand-Eye",
-        summary: "A complete Sim-to-Real research track organized around the dual-arm UR5 platform, covering Base modeling, reinforcement learning, real-world deployment, and perception calibration.",
+        highlight: "SAC + MAML + MuJoCo + Three-Arm Coordination",
+        summary: "Built a high-fidelity three-UR5 arm simulation workspace with MuJoCo. Developed a meta-RL controller based on SAC + MAML for multi-arm coordinated control and fast task adaptation. Converges to zero collision within 20 epochs with latency below 0.6s under noise and occlusion stress tests.",
         links: [
-          { label: "Repo", url: "https://github.com/zx2002430/Dual_Arm_UR5" },
-          { label: "Sim-To-Real", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Sim-To-Real" }
+          { label: "Project Page", url: "#featured-project" }
         ]
       },
       {
-        title: "Vision-Language-Action for Embodied Manipulation",
+        title: "Reproducing Agile Whole-Body Control for Humanoid Robots (ASAP)",
         authors: "Shengxi Jing",
-        venue: "Ongoing Research Direction",
+        venue: "RSS 2025 Reproduction | Isaac Gym + PyTorch",
         type: "VLA",
-        highlight: "Multimodal grounding + action generation",
-        summary: "Exploring VLA-style embodied policies that map visual observations and language instructions to robot actions for manipulation and task execution.",
+        highlight: "PPO + AMASS + Unitree G1 + Sim-to-Real",
+        summary: "Reproduced the ASAP core framework using Isaac Gym and PyTorch. Applied PPO with AMASS dataset for motion tracking and whole-body control (WBC) on Unitree G1 humanoid, validated Sim-to-Real zero-shot transfer.",
         links: [
           { label: "Lab", url: "https://eilab-wanghong.eu.cc/" },
           { label: "GitHub", url: "https://github.com/zx2002430" }
         ]
       },
+      {
+        title: "Medical Image Segmentation with Deep Learning",
+        authors: "Shengxi Jing",
+        venue: "Kaggle Vessel Segmentation Top 17%",
+        type: "VLA",
+        highlight: "VGGNet + U-Net + YOLO + Dice Loss",
+        summary: "Built an end-to-end medical image analysis pipeline with PyTorch, comparing VGGNet, U-Net, and YOLO. Integrated VGGNet as backbone with Dice loss + cross-entropy for fine vessel segmentation, achieving Top 17% on Kaggle.",
+        links: [
+          { label: "Kaggle", url: "https://www.kaggle.com/" }
+        ]
+      },
+      {
+        title: "Development of Anti-Segregation Device for Asphalt Paver (National Innovation Project)",
+        authors: "Shengxi Jing (Lead, Intelligent Perception System)",
+        venue: "National Innovation Training Program | 2024-2026",
+        type: "Deployment",
+        highlight: "Structured-light 3D Point Cloud + YOLOv8 + Real-time Monitoring",
+        summary: "Led the development of the 'Intelligent Recognition and Perception System'. Integrated structured-light camera 3D point cloud data with YOLOv8 for material pile feature extraction, achieving real-time high-precision perception of abnormal height differences and surface topography.",
+        links: [
+          { label: "Project Details", url: "#projects" }
+        ]
+      }
     ],
     simToRealBreakdown: [
       {
-        title: "Base: Dual-Arm UR5 Modeling and Control Foundation",
-        authors: "Shengxi Jing",
-        venue: "Sim-to-Real Component | Base",
+        title: "VA-FastNavi-MARL: Three-Arm Real-Time Coordinated Control",
+        authors: "Shengxi Jing (co-first author)",
+        venue: "ICME 2026 (CCF-B) | MuJoCo + SAC + MAML",
         type: "Deployment",
-        highlight: "MuJoCo + ROS 2 + Task-Space Control",
-        summary: "Builds the system foundation with dual-arm UR5 modeling, MuJoCo environment setup, ROS 2 descriptions, and task-space control.",
+        highlight: "MuJoCo + SAC + MAML + Three-Arm Coordination",
+        summary: "Multi-modal meta-reinforcement learning (SAC + MAML) for real-time coordinated control of three UR5 arms. Built with Python in VS Code on MuJoCo. Converges to zero collision within 20 epochs with latency below 0.6s.",
         links: [
-          { label: "Repo", url: "https://github.com/zx2002430/Dual_Arm_UR5" },
-          { label: "Base Branch", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Base" }
+          { label: "Details", url: "#featured-project" }
         ]
       },
       {
-        title: "RL: Dual-Arm Reinforcement Learning Pipeline",
-        authors: "Shengxi Jing",
-        venue: "Sim-to-Real Component | RL",
+        title: "Anti-Segregation Device for Asphalt Paver (National Innovation Project)",
+        authors: "Shengxi Jing (Lead, Intelligent Perception System)",
+        venue: "National Innovation Training Program | 2024-2026",
         type: "Deployment",
-        highlight: "PPO + Gymnasium + Stable-Baselines3",
-        summary: "Provides PPO-based training, evaluation, and trajectory analysis for coordinated dual-arm tasks.",
+        highlight: "Structured-light 3D Point Cloud + YOLOv8 + Real-time Monitoring",
+        summary: "Led development of 'Intelligent Recognition and Perception System'. Built a real-time monitoring pipeline for asphalt mixture status using machine vision. Integrated structured-light camera 3D point cloud with YOLOv8 for material pile feature extraction.",
         links: [
-          { label: "Repo", url: "https://github.com/zx2002430/Dual_Arm_UR5" },
-          { label: "RL Branch", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/RL-Algorithm" }
-        ]
-      },
-      {
-        title: "Deployment: Real-Robot Execution Stack",
-        authors: "Shengxi Jing",
-        venue: "Sim-to-Real Component | Deployment",
-        type: "Deployment",
-        highlight: "MoveIt + Controllers + Safety Logic",
-        summary: "Connects policy inference, MoveIt, controllers, and the real dual-arm platform for execution beyond simulation.",
-        links: [
-          { label: "Sim-To-Real", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Sim-To-Real" }
-        ]
-      },
-      {
-        title: "Perception: Sensing and Calibration Modules",
-        authors: "Shengxi Jing",
-        venue: "Sim-to-Real Component | Perception",
-        type: "Deployment",
-        highlight: "RGB-D + YOLO + Hand-Eye",
-        summary: "Integrates RGB-D sensing, YOLO detection, 2D-to-3D localization, and hand-eye calibration for perception-driven manipulation.",
-        links: [
-          { label: "Sim-To-Real", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Sim-To-Real" }
+          { label: "Details", url: "#projects" }
         ]
       }
     ],
     vlaPublication: {
-      title: "Vision-Language-Action for Embodied Manipulation",
+      title: "Humanoid Agile Whole-Body Control via Deep RL (ASAP Reproduction)",
       authors: "Shengxi Jing",
-      venue: "Ongoing Research Direction",
+      venue: "RSS 2025 Reproduction | Isaac Gym + PyTorch",
       type: "VLA",
-      highlight: "Multimodal grounding + action generation",
-      summary: "Exploring VLA-style embodied policies that map visual observations and language instructions to robot actions for manipulation and task execution.",
+      highlight: "PPO + AMASS + Unitree G1 + Sim-to-Real",
+      summary: "Reproduced the ASAP core framework (RSS 2025) using Isaac Gym and PyTorch at EILab, Hubei University. Applied PPO with AMASS dataset for motion tracking and whole-body control, deploying jumping and throwing motions on Unitree G1 humanoid.",
       links: [
         { label: "Lab", url: "https://eilab-wanghong.eu.cc/" },
         { label: "GitHub", url: "https://github.com/zx2002430" }
@@ -763,81 +801,101 @@ const localeData = {
     },
     futurePapers: [
       {
-        title: "Perception-Driven Sim-to-Real Bimanual Manipulation and Real Deployment with Dual-Arm UR5",
-        status: "Concept Framed",
-        track: "Sim-to-Real",
-        venue: "IROS / IEEE RA-L",
-        summary: "This paper is planned around the Dual_Arm_UR5 platform and aims to present a coherent Sim-to-Real story spanning MuJoCo modeling, PPO training, ROS 2 / MoveIt deployment, RGB-D perception, and real-robot execution.",
-        contribution: "Expected contributions include a reproducible bimanual system stack, a perception-grounded real deployment workflow, and real-robot validation on dual-arm manipulation tasks.",
+        title: "Real-Time Coordinated Control of Robot Arms via Multi-Modal Meta-Reinforcement Learning (VA-FastNavi-MARL)",
+        status: "Accepted",
+        track: "Multi-Arm Coordination",
+        venue: "ICME 2026 (CCF-B Conference)",
+        summary: "Built a high-fidelity three-UR5 arm simulation workspace with MuJoCo. Developed a meta-RL controller based on SAC + MAML for multi-arm coordinated control and fast task adaptation. Validated under noise and visual occlusion stress tests.",
         links: [
-          { label: "Dual_Arm_UR5", url: "https://github.com/zx2002430/Dual_Arm_UR5" },
-          { label: "Sim-To-Real", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Sim-To-Real" }
-        ]
-      },
-      {
-        title: "Hierarchical Speculative Vision-Language-Action for Embodied Bimanual Manipulation",
-        status: "Main Direction",
-        track: "VLA",
-        venue: "CoRL / ICRA",
-        summary: "This paper would build on the current hierarchical speculative VLA thesis, studying how to accelerate high-level semantic reasoning and replanning while preserving stable low-level continuous execution.",
-        contribution: "Expected contributions include a hierarchical speculative framework for VLA, verification and acceptance design at the high-level semantic layer, and evaluation on latency, replanning frequency, and long-horizon success rate.",
-        links: [
-          { label: "Research", url: "#publications" }
+          { label: "Paper Link", url: "assets/docs/pdf/2604.03998v1.pdf" }
         ]
       },
     ],
     projects: [
       {
-        title: "Dual_Arm_UR5",
-        meta: "Dual-arm manipulation | MuJoCo | ROS 2 | Reinforcement Learning",
-        description: "A main research system covering modeling, control, learning, and deployment for dual-arm UR5 manipulation.",
+        title: "VA-FastNavi-MARL: Three-Arm Coordinated Control",
+        meta: "MuJoCo | SAC | MAML | ICME Accepted",
+        description: "Multi-modal meta-reinforcement learning (SAC + MAML) for real-time coordinated control of three UR5 arms. Built in VS Code with Python on MuJoCo. Converges to zero collision within 20 epochs with latency below 0.6s. Accepted at ICME 2026.",
         links: [
-          { label: "GitHub Repo", url: "https://github.com/zx2002430/Dual_Arm_UR5" },
-          { label: "README", url: "https://github.com/zx2002430/Dual_Arm_UR5" }
+          { label: "Details", url: "#featured-project" },
+          { label: "Lab", url: "https://eilab-wanghong.eu.cc/" }
         ]
       },
       {
-        title: "RL-Algorithm Branch",
-        meta: "PPO | Gymnasium | Stable-Baselines3",
-        description: "A training and evaluation branch for reinforcement learning on coordinated dual-arm tasks.",
+        title: "ASAP: Humanoid Agile Whole-Body Control",
+        meta: "Isaac Gym | PyTorch | PPO | AMASS | Unitree G1",
+        description: "Reproduced ASAP (RSS 2025) core framework for Unitree G1 humanoid robot. Achieved jumping, throwing, and other agile motions with zero-shot Sim-to-Real transfer validation.",
         links: [
-          { label: "Branch Link", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/RL-Algorithm" }
-        ]
-      },
-      {
-        title: "Sim-To-Real Branch",
-        meta: "Real Robot | MoveIt | RGB-D | YOLO",
-        description: "A deployment-oriented branch for perception, planning, and execution on the real dual-arm robot platform.",
-        links: [
-          { label: "Branch Link", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Sim-To-Real" }
-        ]
-      },
-      {
-        title: "VLA Policy Prototyping",
-        meta: "Vision-Language-Action | Embodied Policy | Robot Execution",
-        description: "A parallel research direction focused on instruction-conditioned embodied policies for manipulation and future real-world execution.",
-        links: [
-          { label: "Lab Homepage", url: "https://eilab-wanghong.eu.cc/" },
+          { label: "Lab", url: "https://eilab-wanghong.eu.cc/" },
           { label: "GitHub Profile", url: "https://github.com/zx2002430" }
+        ]
+      },
+      {
+        title: "Medical Image Segmentation with Deep Learning",
+        meta: "PyTorch | VGGNet | U-Net | YOLO | Dice Loss",
+        description: "Built end-to-end medical image analysis pipeline comparing VGGNet, U-Net, and YOLO. Integrated VGGNet as backbone with Dice loss + cross-entropy. Achieved Top 17% on Kaggle Vessel Segmentation.",
+        links: [
+          { label: "Kaggle", url: "https://www.kaggle.com/" }
+        ]
+      },
+      {
+        title: "Anti-Segregation Device for Asphalt Paver (National Innovation Project)",
+        meta: "Structured-light Camera | 3D Point Cloud | YOLOv8 | Real-time Monitoring",
+        description: "Led the 'Intelligent Recognition and Perception System' development. Integrated structured-light camera 3D point cloud with YOLOv8 for real-time high-precision perception of material pile anomalies.",
+        links: [
+          { label: "Project Details", url: "#projects" }
         ]
       },
     ],
     experiences: [
       {
-        title: "Hubei University",
-        subtitle: "Graduate Student in Artificial Intelligence, 2024 - Present",
-        detail: "Working in EILab on VLA, embodied intelligence, reinforcement learning, and robot manipulation."
+        title: "Chang'an University (211 / Double First-Class)",
+        subtitle: "School of Mechanical Engineering · Mechanical Engineering (Transportation Construction & Intelligent Equipment) · B.E. | Sep 2023 – Jun 2027",
+        detail: "GPA: 3.65/5.0 (Rank 7/59), Xi'an, Shaanxi. Key courses: Advanced Mathematics (92), Complex Functions & Integral Transforms (95), Probability & Statistics (93), Mechanics of Materials (91), Mechanical Control Engineering (92), Fluid Mechanics & Hydraulic Transmission (92), Mechanical Design (93)."
       },
       {
-        title: "Research Interests",
-        subtitle: "VLA / Embodied AI / RL / Robot Learning",
-        detail: "Interested in multimodal perception, language grounding, policy learning, and robust robot execution."
+        title: "EILab — Embodied Intelligence Lab",
+        subtitle: "Deep Participation in Research Projects | 2025 – Present",
+        detail: "Deeply involved in embodied intelligence lab projects. Research directions include multi-arm coordinated manipulation, meta-reinforcement learning algorithm design, humanoid whole-body control, and Sim-to-Real deployment."
       },
       {
-        title: "Current Focus",
-        subtitle: "Systems and Research Portfolio",
-        detail: "Developing reproducible systems and research outputs around dual-arm manipulation and VLA-oriented embodied policies."
+        title: "National College Innovation Training Project",
+        subtitle: "Development of Anti-Segregation Device for Asphalt Paver | 2024 – 2026",
+        detail: "Led the development of the 'Intelligent Recognition and Perception System' for real-time monitoring of asphalt mixture status using computer vision."
       }
+    ],
+    courseData: [
+      { name: "Advanced Mathematics", grade: "92" },
+      { name: "Complex Functions & Integral Transforms", grade: "95" },
+      { name: "Probability & Mathematical Statistics", grade: "93" },
+      { name: "Mechanics of Materials", grade: "91" },
+      { name: "Interchangeability & Technical Measurement", grade: "91" },
+      { name: "Mechanical Control Engineering", grade: "92" },
+      { name: "Fluid Mechanics & Hydraulic Transmission", grade: "92" },
+      { name: "Mechanical Design", grade: "93" }
+    ],
+    awardData: [
+      { title: "National Endeavor Scholarship", year: "2025", level: "National" },
+      { title: "Sun Zuwang Scholarship, School of Mechanical Engineering, CHD", year: "2024", level: "School" },
+      { title: "National Third Prize, China University Mechanical Engineering Innovation Competition — Intelligent Equipment & Production Line Application", year: "2025", level: "National", role: "Team Lead" },
+      { title: "Provincial Third Prize, China University Mechanical Engineering Innovation Competition — Regional Selection", year: "2025", level: "Provincial" },
+      { title: "Provincial Third Prize, 3rd NW China University Physics Experiment Competition", year: "2025", level: "Provincial", role: "Team Lead" },
+      { title: "Provincial Second Prize, National College Mathematical Contest in Modeling (Shaanxi)", year: "2025", level: "Provincial", role: "Team Lead" },
+      { title: "Provincial Third Prize, 16th National College Mathematics Competition", year: "2024", level: "Provincial" },
+      { title: "Provincial Third Prize, 17th National College Mathematics Competition", year: "2025", level: "Provincial" }
+    ],
+    competitionData: [
+      { name: "China University Mechanical Engineering Innovation Competition — Intelligent Manufacturing", level: "National Third Prize", role: "Team Lead, Mechanical Design & Algorithm Development" },
+      { name: "3rd NW China University Physics Experiment Competition", level: "Provincial Third Prize", role: "Team Lead, Experiment Design & HW/SW Integration" },
+      { name: "National College Mathematical Contest in Modeling (Shaanxi)", level: "Provincial Second Prize", role: "Team Lead, Modeling & Algorithm Design" },
+      { name: "National College Mathematics Competition", level: "Provincial Third Prize (16th & 17th)", role: "Participant" }
+    ],
+    skillData: [
+      { category: "Programming Languages", items: ["Python (Proficient)", "C (Proficient)"] },
+      { category: "Research Areas", items: ["Reinforcement Learning", "Deep Learning", "Embodied AI", "Humanoid Robots"] },
+      { category: "Professional Software", items: ["Solidworks", "CAD", "EDEM", "Abaqus", "TeXstudio", "Process Simulate"] },
+      { category: "Language", items: ["CET-4 (College English Test Band 4)"] },
+      { category: "Certifications", items: ["National Computer Level 3 — Network Technology"] }
     ]
   }
 };
@@ -890,16 +948,19 @@ function getPublicationState(language, item) {
 
 function getProjectState(language, item) {
   const title = item.title.toLowerCase();
-  if (title.includes("dual_arm_ur5")) {
-    return language === "zh" ? "主系统" : "Main System";
+  if (title.includes("vla") || title.includes("fastnavi") || title.includes("三机械臂")) {
+    return language === "zh" ? "核心项目" : "Core Project";
   }
-  if (title.includes("branch") || title.includes("分支")) {
-    return language === "zh" ? "工作分支" : "Working Branch";
+  if (title.includes("asap") || title.includes("humanoid") || title.includes("人形")) {
+    return language === "zh" ? "研究方向" : "Research Direction";
   }
-  if (title.includes("vla")) {
-    return language === "zh" ? "研究原型" : "Research Prototype";
+  if (title.includes("medical") || title.includes("医学") || title.includes("kaggle")) {
+    return language === "zh" ? "实践项目" : "Practice";
   }
-  return language === "zh" ? "系统条目" : "System Entry";
+  if (title.includes("anti") || title.includes("抗离析") || title.includes("paving") || title.includes("摊铺")) {
+    return language === "zh" ? "大创项目" : "Innovation Project";
+  }
+  return language === "zh" ? "项目" : "Project";
 }
 
 function applyStaticText(language) {
@@ -1090,7 +1151,6 @@ function renderPublications(language) {
 function renderFuturePapers(language) {
   const container = document.getElementById("future-paper-list");
   const venueLabel = language === "zh" ? "目标投稿" : "Target Venue";
-  const contributionLabel = language === "zh" ? "预计贡献" : "Expected Contribution";
   container.innerHTML = localeData[language].futurePapers
     .map(
       (item) => {
@@ -1107,10 +1167,6 @@ function renderFuturePapers(language) {
             <p class="future-paper-target"><strong>${venueLabel}:</strong> ${item.venue}</p>
           </div>
           <p class="future-paper-summary">${item.summary}</p>
-          <div class="future-paper-focus">
-            <strong>${contributionLabel}</strong>
-            <p>${item.contribution}</p>
-          </div>
           <div class="card-action-stack">
             <div class="card-action-primary">
               ${primaryLink ? renderActionLink(primaryLink, "primary") : ""}
@@ -1175,6 +1231,93 @@ function renderExperience(language) {
       `
     )
     .join("");
+}
+
+function renderCourses(language) {
+  const container = document.getElementById("course-grid");
+  const data = localeData[language].courseData;
+  if (!data || !data.length) return;
+
+  const label = language === "zh" ? "主修课程成绩" : "Key Course Grades";
+
+  container.innerHTML = `
+    <div class="course-section">
+      <h3 class="course-section-title">${label}</h3>
+      <div class="course-grid-inner">
+        ${data.map(c => `
+          <div class="course-item">
+            <span class="course-name">${c.name}</span>
+            <span class="course-grade">${c.grade}</span>
+          </div>
+        `).join("")}
+      </div>
+    </div>
+  `;
+}
+
+function renderAwards(language) {
+  const container = document.getElementById("award-list");
+  const data = localeData[language].awardData;
+  if (!data || !data.length) return;
+
+  container.innerHTML = data.map(a => `
+    <div class="award-item">
+      <div class="award-head">
+        <span class="award-badge">${a.level}</span>
+        <span class="award-year">${a.year}</span>
+      </div>
+      <div class="award-body">
+        <strong>${a.title}</strong>
+        ${a.role ? `<span class="award-role">${a.role}</span>` : ""}
+      </div>
+    </div>
+  `).join("");
+}
+
+function renderCompetitions(language) {
+  const container = document.getElementById("competition-list");
+  const data = localeData[language].competitionData;
+  if (!data || !data.length) return;
+
+  const label = language === "zh" ? "竞赛经历" : "Competition Experience";
+
+  container.innerHTML = `
+    <div class="competition-section">
+      <h4 class="competition-section-title">${label}</h4>
+      ${data.map(c => `
+        <div class="competition-item">
+          <strong class="competition-name">${c.name}</strong>
+          <div class="competition-meta">
+            <span class="competition-level">${c.level}</span>
+            <span class="competition-role">${c.role}</span>
+          </div>
+        </div>
+      `).join("")}
+    </div>
+  `;
+}
+
+function renderSkills(language) {
+  const container = document.getElementById("skills-overview");
+  const detailContainer = document.getElementById("skills-detail");
+  const data = localeData[language].skillData;
+  if (!data || !data.length) return;
+
+  container.innerHTML = data.map(s => `
+    <article class="stack-overview-item">
+      <strong>${s.category}</strong>
+      <span>${s.items.join(" / ")}</span>
+    </article>
+  `).join("");
+
+  detailContainer.innerHTML = data.map(s => `
+    <article class="stack-group-card">
+      <strong>${s.category}</strong>
+      <div class="stack-group-tags">
+        ${s.items.map(item => `<span>${item}</span>`).join("")}
+      </div>
+    </article>
+  `).join("");
 }
 
 function updateLanguageButtons() {
@@ -1312,6 +1455,10 @@ function renderPage(language) {
   renderFuturePapers(language);
   renderProjects(language);
   renderExperience(language);
+  renderCourses(language);
+  renderAwards(language);
+  renderCompetitions(language);
+  renderSkills(language);
   initializeMotionLoaders(language);
   initializeHomepageMotion();
   updateLanguageButtons();
