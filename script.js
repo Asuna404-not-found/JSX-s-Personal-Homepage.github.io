@@ -418,7 +418,7 @@ const localeData = {
         summary: "基于 Isaac Gym 与 PyTorch 复现 ASAP 核心框架，运用 PPO 强化学习配合 AMASS 数据集实现 Unitree G1 人形机器人的动作追踪与全身控制，验证 Sim-to-Real 零样本迁移。",
         links: [
           { label: "实验室", url: "https://eilab-wanghong.eu.cc/" },
-          { label: "GitHub", url: "https://github.com/zx2002430" }
+          { label: "GitHub", url: "https://github.com/Asuna404-not-found" }
         ]
       },
       {
@@ -477,7 +477,7 @@ const localeData = {
       summary: "在湖北大学具身智能实验室基于 Isaac Gym 与 PyTorch 复现 RSS 2025 论文 ASAP 核心框架。运用 PPO 强化学习算法结合 AMASS 数据集完成动作追踪训练，在 Unitree G1 人形机器人模型上部署并复现跳投、跳跃等高动态敏捷运动。",
       links: [
         { label: "实验室", url: "https://eilab-wanghong.eu.cc/" },
-        { label: "GitHub", url: "https://github.com/zx2002430" }
+        { label: "GitHub", url: "https://github.com/Asuna404-not-found" }
       ]
     },
     vlaPublication: {
@@ -489,7 +489,7 @@ const localeData = {
       summary: "探索将视觉观测与语言指令映射到机器人动作的 VLA 风格策略，用于具身操作与任务执行。",
       links: [
         { label: "实验室", url: "https://eilab-wanghong.eu.cc/" },
-        { label: "GitHub", url: "https://github.com/zx2002430" }
+        { label: "GitHub", url: "https://github.com/Asuna404-not-found" }
       ]
     },
     futurePapers: [
@@ -520,7 +520,7 @@ const localeData = {
         description: "复现 RSS 2025 论文 ASAP 核心框架，实现 Unitree G1 人形机器人的跳投、跳跃等高动态敏捷运动，完成从低保真到高保真环境的零样本迁移验证。",
         links: [
           { label: "实验室", url: "https://eilab-wanghong.eu.cc/" },
-          { label: "GitHub 主页", url: "https://github.com/zx2002430" }
+          { label: "GitHub 主页", url: "https://github.com/Asuna404-not-found" }
         ]
       },
       {
@@ -691,7 +691,7 @@ const localeData = {
         summary: "Reproduced the ASAP core framework using Isaac Gym and PyTorch. Applied PPO with AMASS dataset for motion tracking and whole-body control (WBC) on Unitree G1 humanoid, validated Sim-to-Real zero-shot transfer.",
         links: [
           { label: "Lab", url: "https://eilab-wanghong.eu.cc/" },
-          { label: "GitHub", url: "https://github.com/zx2002430" }
+          { label: "GitHub", url: "https://github.com/Asuna404-not-found" }
         ]
       },
       {
@@ -750,7 +750,7 @@ const localeData = {
       summary: "Reproduced the ASAP core framework (RSS 2025) using Isaac Gym and PyTorch at EILab, Hubei University. Applied PPO with AMASS dataset for motion tracking and whole-body control, deploying jumping and throwing motions on Unitree G1 humanoid.",
       links: [
         { label: "Lab", url: "https://eilab-wanghong.eu.cc/" },
-        { label: "GitHub", url: "https://github.com/zx2002430" }
+        { label: "GitHub", url: "https://github.com/Asuna404-not-found" }
       ]
     },
     futurePapers: [
@@ -781,7 +781,7 @@ const localeData = {
         description: "Reproduced ASAP (RSS 2025) core framework for Unitree G1 humanoid robot. Achieved jumping, throwing, and other agile motions with zero-shot Sim-to-Real transfer validation.",
         links: [
           { label: "Lab", url: "https://eilab-wanghong.eu.cc/" },
-          { label: "GitHub Profile", url: "https://github.com/zx2002430" }
+          { label: "GitHub Profile", url: "https://github.com/Asuna404-not-found" }
         ]
       },
       {
