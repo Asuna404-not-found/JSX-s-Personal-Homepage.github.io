@@ -159,8 +159,8 @@ const uiText = {
   },
   en: {
     meta: {
-      title: "Xun Zhao | Academic Homepage",
-      description: "Academic homepage of Xun Zhao at Hubei University, focusing on VLA, embodied AI, reinforcement learning, and robot manipulation."
+      title: "Shengxi Jing | Academic Homepage",
+      description: "Academic homepage of Shengxi Jing at Chang'an University, focusing on embodied intelligence, reinforcement learning, and robot manipulation."
     },
     trail: {
       homeLabel: "Home",
@@ -174,118 +174,118 @@ const uiText = {
     },
     hero: {
       eyebrow: "Academic Homepage",
-      subtitle: "Graduate Student, School of Artificial Intelligence, Hubei University | Research: VLA, smart agriculture, embodied AI, reinforcement learning, and robot manipulation",
+      subtitle: "Undergraduate Student, School of Mechanical Engineering and Intelligent Equipment, Chang'an University | Research: Embodied Intelligence, Reinforcement Learning, Robot Control",
       text:
-        'I am currently a graduate student at Hubei University, working with <a href="https://eilab-wanghong.eu.cc/" target="_blank" rel="noopener noreferrer">EILab</a>. My research focuses on vision-language-action models, smart agriculture, embodied intelligence, and reinforcement-learning-based robot control. My current work centers on dual-arm manipulation systems, Sim-to-Real deployment, and perception-control loops for both real-world and agricultural environments.',
+        "I am currently an undergraduate student at Chang'an University, majoring in Mechanical Engineering (Transportation Construction and Intelligent Equipment). Working with <a href=\"https://eilab-wanghong.eu.cc/\" target=\"_blank\" rel=\"noopener noreferrer\">EILab</a>, I focus on embodied intelligence and reinforcement-learning-based robot control. My current work centers on multi-arm multimodal manipulation and Sim-to-Real deployment.",
       viewResearch: "View Research",
       getInTouch: "Get in Touch",
       lab: "Lab",
       github: "GitHub",
       cv: "Repository",
       email: "Email",
-      identityRole: "Graduate Student, EILab",
-      identitySchool: "School of Artificial Intelligence, Hubei University",
+      identityRole: "Undergraduate, EILab",
+      identitySchool: "School of Mechanical Engineering and Intelligent Equipment, Chang'an University",
       focusLabel: "Focus",
-      focusValue: "VLA / Smart Agriculture / Embodied AI / RL Manipulation",
+      focusValue: "Embodied AI / Reinforcement Learning",
       nowLabel: "Now",
-      nowValue: "Studying embodied agents and robot learning",
+      nowValue: "Studying embodied intelligence and robot learning",
       locationLabel: "Based In",
-      locationValue: "Wuhan, China"
+      locationValue: "Xi'an, Shaanxi, China"
     },
     about: {
       eyebrow: "About",
       title: "Profile",
       p1:
-        "My research centers on <strong>Vision-Language-Action</strong>, <strong>smart agriculture</strong>, <strong>embodied intelligence</strong>, and <strong>reinforcement learning for robot control</strong>, with a focus on connecting visual understanding, action generation, policy learning, and robot execution.",
+        "My research centers on <strong>Embodied Intelligence</strong>, <strong>Reinforcement Learning</strong>, <strong>Meta-Learning</strong>, and <strong>Robot & Humanoid Control</strong>, with a focus on connecting multimodal perception, adaptive policy learning, and highly dynamic agile robot execution.",
       p2:
-        "My current work emphasizes dual-arm manipulation, multimodal perception, language-conditioned decision making, intelligent systems for agricultural settings, and Sim-to-Real deployment. I aim to build reproducible and extensible research outputs grounded in real systems.",
+        "My current work emphasizes multi-arm real-time coordinated control, whole-body control (WBC) for humanoid robots, visual deep learning analysis in industrial scenarios (e.g. accurate extraction of material pile height differences), and Sim-to-Real deployment. I am committed to deeply integrating mechanical hardware foundations with cutting-edge AI algorithms to build reproducible, scalable intelligent systems for real-world physical environments.",
       interestsTitle: "Research Interests",
       tags: {
-        vla: "Vision-Language-Action",
         embodied: "Embodied Intelligence",
         rl: "Reinforcement Learning",
-        robot: "Robot Manipulation",
-        cv: "Computer Vision",
-        policy: "Policy Learning"
+        meta: "Meta-Learning",
+        robot: "Robot Manipulation and Control",
+        cv: "Computer Vision and Deep Learning",
+        sim2real: "Sim-to-Real"
       }
     },
-    dualArm: {
+    multiArm: {
       eyebrow: "Featured Project",
-      note: "My most representative current project, highlighting dual-arm manipulation, learning-based control, and real-system deployment.",
-      badge: "Featured Research",
-      overviewTitle: "A full research pipeline from MuJoCo simulation to real dual-arm UR5 deployment",
+      note: "My most representative current project, highlighting multi-arm real-time coordinated manipulation, meta-reinforcement learning algorithm design, and high-fidelity simulation environment development.",
+      badge: "Core Research",
+      overviewTitle: "Real-Time Coordinated Control of Three UR5 Arms Based on Multimodal Meta-Reinforcement Learning (VA-FastNavi-MARL)",
       snapshotTitle: "Project Snapshot",
       pipelineTitle: "Research Pipeline",
       highlightsTitle: "Key Highlights",
       focusLabel: "System Focus",
-      focusItem1: "Dual-Arm UR5",
-      focusItem2: "MuJoCo + PPO",
-      focusItem3: "ROS 2 + MoveIt",
-      focusItem4: "Real Deployment",
+      focusItem1: "Three UR5 Arms",
+      focusItem2: "MuJoCo + SAC + MAML",
+      focusItem3: "Discrete Phase Flags",
+      focusItem4: "Zero-Collision Avoidance",
       galleryTitle: "Project Visuals",
-      galleryNote: "The visuals below cover the real platform, simulation environment, control experiments, and deployment process, all taken from actual project records.",
+      galleryNote: "The visuals below cover simulation environment setup, algorithm logic validation, and multi-arm cooperative control. The model converges to zero collision within 20 epochs with response latency below 0.6s.",
       media: {
-        realKicker: "Real System",
-        realType: "Lab Photo",
-        realTitle: "Real dual-arm UR5 platform",
-        realDesc: "Shows the robot arms, workbench, and camera setup as the most direct real-system entry point on the homepage.",
+        realKicker: "Coordination",
+        realType: "Mechanism",
+        realTitle: "Active Agent Dynamic Authorization & Scheduling",
+        realDesc: "Precise authorization of specific arms as active agents via discrete phase flags ($0, 1, 2$), achieving efficient seamless multi-arm coordination.",
         simKicker: "Simulation",
         simType: "MuJoCo",
-        simTitle: "MuJoCo dual-arm interaction demo",
-        simDesc: "Highlights collaborative dual-arm behavior and basic control performance in simulation.",
-        vizKicker: "Visualization",
-        vizType: "ROS 2 + RViz",
-        vizTitle: "ROS 2 + RViz simulation demo",
-        vizDesc: "Shows the integration of robot description, visualization, and control in a ROS 2 environment.",
+        simTitle: "MuJoCo Three-Arm High-Fidelity Simulation Workspace",
+        simDesc: "Showcasing real-time interaction and control of three robot arms in high-fidelity physics simulation.",
+        vizKicker: "Adaptation",
+        vizType: "MAML Framework",
+        vizTitle: "Fast Adaptation Across Multi-Instruction Tasks",
+        vizDesc: "Demonstrating rapid migration and adaptive execution of the controller across different unknown instruction tasks.",
         ctrlKicker: "Control",
-        ctrlType: "Trajectory Tracking",
-        ctrlTitle: "Dual-arm end-effector tracking demo",
-        ctrlDesc: "Illustrates task-space control and end-effector tracking as a key control result.",
-        deployKicker: "MoveIt",
-        deployType: "Real Robot",
-        deployTitle: "MoveIt deployment demo",
-        deployDesc: "Shows planning and execution on the real dual-arm platform."
+        ctrlType: "Stress Test",
+        ctrlTitle: "Noise and Visual Occlusion Stress Test",
+        ctrlDesc: "Demonstrating system robustness and zero-collision cooperative obstacle avoidance under extreme interference.",
+        deployKicker: "Validation",
+        deployType: "Scenario",
+        deployTitle: "Cooperative Execution in Complex Tasks",
+        deployDesc: "Showcasing logical coherence and system-level deployment of multi-arm coordinated planning."
       }
     },
-    vla: {
-      eyebrow: "Featured Direction",
-      title: "Vision-Language-Action",
-      note: "The current focus is a hierarchical speculative VLA track built on OpenVLA-OFT and AdaMoE, with the homepage showing the thesis and the dedicated page expanding the engineering and experiment plan.",
+    humanoid: {
+      eyebrow: "Research Direction",
+      title: "Humanoid Agile Locomotion and Whole-Body Control (ASAP)",
+      note: "Based on HumanoidVerse and Isaac Gym, focusing on whole-body control (WBC) for high-DoF humanoid robots and Sim-to-Real zero-shot transfer from low-fidelity to high-fidelity environments.",
       badge: "Research Direction",
-      repo: "OpenVLA-OFT / AdaMoE / Speculative VLA",
-      overviewTitle: "Current Thesis: Hierarchical Speculative VLA",
+      repo: "Isaac Gym / PyTorch / Unitree G1",
+      overviewTitle: "Current Thesis: Humanoid Agile Locomotion via Deep Reinforcement Learning",
       snapshotTitle: "Current Snapshot",
-      pipelineTitle: "Current Path",
+      pipelineTitle: "Progress Path",
       highlightsTitle: "Research Judgments",
       focusLabel: "Current Focus",
-      focusItem1: "OpenVLA-OFT",
-      focusItem2: "AdaMoE",
-      focusItem3: "Hierarchical Speculative VLA",
-      focusItem4: "Long-Horizon Eval"
+      focusItem1: "ASAP Core Framework Reproduction",
+      focusItem2: "PPO + AMASS Dataset",
+      focusItem3: "Unitree G1 Motion Tracking",
+      focusItem4: "Sim-to-Sim/Real Deployment"
     },
     updates: {
       eyebrow: "Updates",
       title: "Research Updates",
-      note: "A compact list of recent activities that reflects the current research trajectory."
+      note: "A compact record of recent academic achievements, including conference paper acceptances (ICME, etc.) and system deployment progress."
     },
     research: {
       eyebrow: "Overview",
       title: "Research Direction Overview",
-      note: "A compact overview of the research themes and methodological focus before the detailed direction modules."
+      note: "A compact overview of current research themes centered on embodied intelligence, reinforcement learning, meta-learning, and computer vision in cross-domain scenarios."
     },
     futurePapersSection: {
-      eyebrow: "Paper Plans",
-      title: "Planned Papers"
+      eyebrow: "Publications",
+      title: "Accepted and Submitted Work"
     },
     systems: {
       eyebrow: "Systems",
-      title: "System Projects",
-      note: "System implementations and experimental infrastructure that support the current research agenda."
+      title: "Intelligent Perception & Recognition Systems",
+      note: "Real-time monitoring pipeline built on visual deep learning. Core achievement: accurate extraction of abnormal material pile height differences and surface topography (Attained Results), providing reliable high-precision perception support for physical control."
     },
     modules: {
-      eyebrow: "Directions",
-      title: "Research Directions",
-      note: "The following sections present my core Sim-to-Real dual-arm research direction and a parallel Vision-Language-Action track."
+      eyebrow: "Modules",
+      title: "Core Research Modules",
+      note: "The following sections present the current core multi-arm collaborative meta-reinforcement learning research track alongside parallel humanoid control and visual perception directions."
     },
     background: {
       eyebrow: "Background",
@@ -293,24 +293,22 @@ const uiText = {
     },
     community: {
       eyebrow: "Community",
-      title: "Honors, Service & Skills",
+      title: "Honors, Competitions & Skills",
       honorsTitle: "Selected Honors",
-      honorsText: "National Scholarship, outstanding student honors, competition awards, and related distinctions.",
-      serviceTitle: "Academic Service",
-      serviceText: "Served as a teaching assistant for Python and Fundamentals of Artificial Intelligence, with sustained responsibilities in lab instruction support, homework management, exam organization, and marking.",
+      honorsText: "National Endeavor Scholarship (2025), National Third Prize in China University Mechanical Engineering Innovation and Creativity Competition (Intelligent Manufacturing), Provincial Second Prize in National College Mathematical Contest in Modeling.",
+      serviceTitle: "Academic and Competition Practice",
+      serviceText: "Served as team lead for national and provincial academic competitions, leading mechanical design, core algorithm development (control evaluation model variable $S \\in [3, 27]$), and software-hardware system integration.",
       stackTitle: "Technical Stack",
-      stackText: "Python, PyTorch, CUDA, ROS, Docker, Linux, LaTeX, Hugging Face, and related tooling."
+      stackText: "Python, C, PyTorch, MuJoCo, Isaac Gym, Solidworks, CAD, EDEM, Abaqus, TeXstudio."
     },
     contact: {
       eyebrow: "Contact",
-      title: "Contact",
-      text: "I welcome discussion and collaboration on VLA, embodied AI, reinforcement learning, and robot manipulation. I will continue to update this page with project progress and research outputs.",
-      visitLab: "Visit EILab"
+      title: "Contact"
     },
     filters: {
       all: "All",
-      deployment: "Sim-to-Real",
-      vla: "VLA"
+      deployment: "Multi-Arm",
+      vla: "Humanoid"
     }
   }
 };
@@ -343,7 +341,6 @@ const localeData = {
       summary:
         "Dual_Arm_UR5 是我当前研究组合中的核心项目，围绕双臂 UR5 建立了从物理建模、任务空间控制，到 PPO 学习、ROS 2 / MoveIt 集成、感知模块接入与真实系统部署的完整实验平台。该平台也为后续面向 VLA 的机器人操作研究提供了稳定的系统基础。",
       links: [
-        { label: "项目展示页", url: "dual-ur5.html" },
         { label: "项目仓库", url: "https://github.com/zx2002430/Dual_Arm_UR5" },
         { label: "Base 分支", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Base" },
         { label: "RL-Algorithm", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/RL-Algorithm" },
@@ -418,7 +415,7 @@ const localeData = {
     overviewPublications: [
       {
         title: "融合 RGB-D 感知的双臂 Sim-to-Real 控制",
-        authors: "赵汛",
+        authors: "景晟熙",
         venue: "研究主线 | Sim-to-Real",
         type: "Deployment",
         highlight: "ROS 2 + MoveIt + YOLO + 手眼标定",
@@ -430,7 +427,7 @@ const localeData = {
       },
       {
         title: "面向具身操作的 Vision-Language-Action",
-        authors: "赵汛",
+        authors: "景晟熙",
         venue: "进行中的研究方向",
         type: "VLA",
         highlight: "多模态对齐 + 动作生成",
@@ -444,7 +441,7 @@ const localeData = {
     simToRealBreakdown: [
       {
         title: "Base：双臂 UR5 建模与控制基础",
-        authors: "赵汛",
+        authors: "景晟熙",
         venue: "Sim-to-Real 组成部分 | Base",
         type: "Deployment",
         highlight: "MuJoCo + ROS 2 + 任务空间控制",
@@ -456,7 +453,7 @@ const localeData = {
       },
       {
         title: "RL：双臂强化学习训练链路",
-        authors: "赵汛",
+        authors: "景晟熙",
         venue: "Sim-to-Real 组成部分 | RL",
         type: "Deployment",
         highlight: "PPO + Gymnasium + Stable-Baselines3",
@@ -468,7 +465,7 @@ const localeData = {
       },
       {
         title: "Deployment：真实双臂部署链路",
-        authors: "赵汛",
+        authors: "景晟熙",
         venue: "Sim-to-Real 组成部分 | Deployment",
         type: "Deployment",
         highlight: "MoveIt + 控制器 + 状态机",
@@ -479,7 +476,7 @@ const localeData = {
       },
       {
         title: "Perception：感知与标定模块",
-        authors: "赵汛",
+        authors: "景晟熙",
         venue: "Sim-to-Real 组成部分 | Perception",
         type: "Deployment",
         highlight: "RGB-D + YOLO + 手眼标定",
@@ -491,7 +488,7 @@ const localeData = {
     ],
     vlaPublication: {
       title: "面向具身操作的 Vision-Language-Action",
-      authors: "赵汛",
+      authors: "景晟熙",
       venue: "进行中的研究方向",
       type: "VLA",
       highlight: "多模态对齐 + 动作生成",
@@ -522,7 +519,6 @@ const localeData = {
         summary: "拟围绕当前已经收敛的层级式 speculative VLA 主线，研究如何在高层语义子任务空间提升推理与重规划效率，同时保持低层连续动作执行的稳定性。",
         contribution: "预计贡献包括面向 VLA 的层级式 speculative 框架、高层 verification 与 acceptance 设计，以及 latency、replan 频率和长时程成功率的实验验证。",
         links: [
-          { label: "专题页面", url: "vla-research.html" },
           { label: "Research", url: "#publications" }
         ]
       },
@@ -608,7 +604,6 @@ const localeData = {
       summary:
         "Dual_Arm_UR5 is the core project in my current research portfolio. It covers the full path from physical modeling and task-space control to PPO learning, ROS 2 / MoveIt integration, perception modules, and real-system deployment. The platform also serves as a stable systems foundation for future VLA-oriented manipulation research.",
       links: [
-        { label: "Showcase Page", url: "dual-ur5.html" },
         { label: "GitHub Repo", url: "https://github.com/zx2002430/Dual_Arm_UR5" },
         { label: "Base", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Base" },
         { label: "RL-Algorithm", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/RL-Algorithm" },
@@ -683,7 +678,7 @@ const localeData = {
     overviewPublications: [
       {
         title: "Sim-to-Real Dual-Arm Control with RGB-D Perception",
-        authors: "Xun Zhao",
+        authors: "Shengxi Jing",
         venue: "Research Track | Sim-to-Real",
         type: "Deployment",
         highlight: "ROS 2 + MoveIt + YOLO + Hand-Eye",
@@ -695,7 +690,7 @@ const localeData = {
       },
       {
         title: "Vision-Language-Action for Embodied Manipulation",
-        authors: "Xun Zhao",
+        authors: "Shengxi Jing",
         venue: "Ongoing Research Direction",
         type: "VLA",
         highlight: "Multimodal grounding + action generation",
@@ -709,7 +704,7 @@ const localeData = {
     simToRealBreakdown: [
       {
         title: "Base: Dual-Arm UR5 Modeling and Control Foundation",
-        authors: "Xun Zhao",
+        authors: "Shengxi Jing",
         venue: "Sim-to-Real Component | Base",
         type: "Deployment",
         highlight: "MuJoCo + ROS 2 + Task-Space Control",
@@ -721,7 +716,7 @@ const localeData = {
       },
       {
         title: "RL: Dual-Arm Reinforcement Learning Pipeline",
-        authors: "Xun Zhao",
+        authors: "Shengxi Jing",
         venue: "Sim-to-Real Component | RL",
         type: "Deployment",
         highlight: "PPO + Gymnasium + Stable-Baselines3",
@@ -733,7 +728,7 @@ const localeData = {
       },
       {
         title: "Deployment: Real-Robot Execution Stack",
-        authors: "Xun Zhao",
+        authors: "Shengxi Jing",
         venue: "Sim-to-Real Component | Deployment",
         type: "Deployment",
         highlight: "MoveIt + Controllers + Safety Logic",
@@ -744,7 +739,7 @@ const localeData = {
       },
       {
         title: "Perception: Sensing and Calibration Modules",
-        authors: "Xun Zhao",
+        authors: "Shengxi Jing",
         venue: "Sim-to-Real Component | Perception",
         type: "Deployment",
         highlight: "RGB-D + YOLO + Hand-Eye",
@@ -756,7 +751,7 @@ const localeData = {
     ],
     vlaPublication: {
       title: "Vision-Language-Action for Embodied Manipulation",
-      authors: "Xun Zhao",
+      authors: "Shengxi Jing",
       venue: "Ongoing Research Direction",
       type: "VLA",
       highlight: "Multimodal grounding + action generation",
@@ -787,7 +782,6 @@ const localeData = {
         summary: "This paper would build on the current hierarchical speculative VLA thesis, studying how to accelerate high-level semantic reasoning and replanning while preserving stable low-level continuous execution.",
         contribution: "Expected contributions include a hierarchical speculative framework for VLA, verification and acceptance design at the high-level semantic layer, and evaluation on latency, replanning frequency, and long-horizon success rate.",
         links: [
-          { label: "Research Page", url: "vla-research.html" },
           { label: "Research", url: "#publications" }
         ]
       },
@@ -827,7 +821,13 @@ const localeData = {
           { label: "GitHub Profile", url: "https://github.com/zx2002430" }
         ]
       },
+    ],
+    experiences: [
       {
+        title: "Hubei University",
+        subtitle: "Graduate Student in Artificial Intelligence, 2024 - Present",
+        detail: "Working in EILab on VLA, embodied intelligence, reinforcement learning, and robot manipulation."
+      },
       {
         title: "Research Interests",
         subtitle: "VLA / Embodied AI / RL / Robot Learning",
@@ -874,6 +874,15 @@ function renderActionLink(link, variant = "secondary") {
   return `<a class="action-link action-link-${variant}" href="${link.url}" target="${target}"${rel}>${link.label}</a>`;
 }
 
+function getPublicationState(language, item) {
+  const map = {
+    zh: {
+      Deployment: "系统主线",
+      VLA: "进行中"
+    },
+    en: {
+      Deployment: "System Track",
+      VLA: "Ongoing"
     }
   };
   return map[language]?.[item.type] || (language === "zh" ? "研究条目" : "Research Entry");
@@ -889,9 +898,6 @@ function getProjectState(language, item) {
   }
   if (title.includes("vla")) {
     return language === "zh" ? "研究原型" : "Research Prototype";
-  }
-  if (title.includes("智慧农业") || title.includes("agriculture")) {
-    return language === "zh" ? "专题套页" : "Suite";
   }
   return language === "zh" ? "系统条目" : "System Entry";
 }
@@ -978,14 +984,8 @@ function renderFeaturedProject(language) {
 function renderVlaDirection(language) {
   const data = localeData[language].vlaDirection;
   document.getElementById("vla-summary").textContent = data.summary;
-  document.getElementById("vla-links").innerHTML =
-    renderLink({
-      label: language === "zh" ? "专题页面" : "Research Page",
-      url: "vla-research.html"
-    }) +
-    data.links.map(renderLink).join("");
-  document.getElementById("agri-links").innerHTML = data.links.map(renderLink).join("");
-  document.getElementById("agri-metrics").innerHTML = data.metrics
+  document.getElementById("vla-links").innerHTML = data.links.map(renderLink).join("");
+  document.getElementById("vla-metrics").innerHTML = data.metrics
     .map(
       (item) => `
         <article class="metric-card">
@@ -995,7 +995,7 @@ function renderVlaDirection(language) {
       `
     )
     .join("");
-  document.getElementById("agri-pipeline").innerHTML = data.pipeline
+  document.getElementById("vla-pipeline").innerHTML = data.pipeline
     .map(
       (item, index) => `
         <article class="pipeline-step">
@@ -1008,7 +1008,7 @@ function renderVlaDirection(language) {
       `
     )
     .join("");
-  document.getElementById("agri-highlights").innerHTML = data.highlights
+  document.getElementById("vla-highlights").innerHTML = data.highlights
     .map((item) => `<article class="highlight-item"><p>${item}</p></article>`)
     .join("");
 }
@@ -1052,8 +1052,6 @@ function renderPublications(language) {
     items = locale.simToRealBreakdown;
   } else if (currentFilter === "VLA") {
     items = [locale.vlaPublication];
-  } else if (currentFilter === "Agriculture") {
-    items = [locale.agriculturePublication];
   }
 
   container.innerHTML = items
@@ -1080,12 +1078,6 @@ function renderPublications(language) {
             </div>
             <div class="card-action-secondary">
               ${secondaryLinks.map((link) => renderActionLink(link, "secondary")).join("")}
-            ${item.type === "VLA"
-              ? renderActionLink({
-                  label: language === "zh" ? "专题页面" : "Research Page",
-                  url: "vla-research.html"
-                }, "secondary")
-              : ""}
             </div>
           </div>
         </article>
@@ -1168,44 +1160,16 @@ function renderProjects(language) {
 
 function renderExperience(language) {
   const container = document.getElementById("experience-list");
-  const experienceCards = {
-    zh: [
-      {
-        label: "教育背景",
-        period: "2024 - 至今",
-        title: "湖北大学",
-        subtitle: "人工智能专业研究生 / EILab",
-        detail: "围绕 VLA、具身智能、强化学习与机械臂操作开展研究，并持续积累系统实现与实验复现经验。",
-        tags: ["Artificial Intelligence", "EILab", "Graduate Research"]
-      }
-    ],
-    en: [
-      {
-        label: "Education",
-        period: "2024 - Present",
-        title: "Hubei University",
-        subtitle: "Graduate Student in Artificial Intelligence / EILab",
-        detail: "Conducting research on VLA, embodied intelligence, reinforcement learning, and robot manipulation with an emphasis on system building and reproducible experimentation.",
-        tags: ["Artificial Intelligence", "EILab", "Graduate Research"]
-      }
-    ]
-  };
+  const data = localeData[language].experiences;
 
-  container.innerHTML = experienceCards[language]
+  container.innerHTML = data
     .map(
       (item) => `
         <article class="experience-card">
-          <div class="experience-card-head">
-            <span class="experience-card-label">${item.label}</span>
-            <span class="experience-card-period">${item.period}</span>
-          </div>
           <div class="experience-card-body">
             <h3>${item.title}</h3>
             <p class="experience-card-subtitle">${item.subtitle}</p>
             <p class="experience-card-detail">${item.detail}</p>
-          </div>
-          <div class="experience-card-tags">
-            ${item.tags.map((tag) => `<span>${tag}</span>`).join("")}
           </div>
         </article>
       `
@@ -1300,8 +1264,6 @@ function initializeHomepageMotion() {
       ".feature-card",
       ".metric-card",
       ".media-card",
-      ".agri-showcase-card",
-      ".agri-entry-card",
       ".project-card",
       ".stack-card",
       ".timeline-item",
@@ -1344,7 +1306,6 @@ function renderPage(language) {
   applyStaticText(language);
   renderNews(language);
   renderFeaturedProject(language);
-  renderSmartAgricultureFeature(language);
   renderVlaDirection(language);
   renderFilters(language);
   renderPublications(language);
@@ -1367,59 +1328,5 @@ document.querySelectorAll(".lang-button").forEach((button) => {
     setLanguage(button.dataset.lang);
   });
 });
-
-/* Position fixed dropdown on mobile only */
-(function() {
-  var dropdown = document.querySelector(".nav-dropdown");
-  if (!dropdown) return;
-  var menu = dropdown.querySelector(".nav-dropdown-menu");
-  if (!menu) return;
-  var summary = dropdown.querySelector("summary");
-  var isMobile = function() { return window.innerWidth <= 900; };
-  var mobileEnabled = false;
-  var clickOutsideHandler = null;
-
-  function positionMenu() {
-    if (!dropdown.open) return;
-    var rect = summary.getBoundingClientRect();
-    menu.style.top = (rect.bottom + 4) + "px";
-    menu.style.left = Math.min(rect.left, window.innerWidth - 170) + "px";
-  }
-
-  function enableMobile() {
-    if (mobileEnabled) return;
-    mobileEnabled = true;
-    dropdown.addEventListener("toggle", positionMenu);
-    clickOutsideHandler = function(e) {
-      if (!dropdown.contains(e.target)) {
-        dropdown.open = false;
-      }
-    };
-    document.addEventListener("click", clickOutsideHandler);
-  }
-
-  function disableMobile() {
-    if (!mobileEnabled) return;
-    mobileEnabled = false;
-    dropdown.removeEventListener("toggle", positionMenu);
-    if (clickOutsideHandler) {
-      document.removeEventListener("click", clickOutsideHandler);
-      clickOutsideHandler = null;
-    }
-    menu.style.top = "";
-    menu.style.left = "";
-  }
-
-  function updateState() {
-    if (isMobile()) {
-      enableMobile();
-    } else {
-      disableMobile();
-    }
-  }
-
-  updateState();
-  window.addEventListener("resize", updateState);
-})();
 
 renderPage(currentLanguage);
