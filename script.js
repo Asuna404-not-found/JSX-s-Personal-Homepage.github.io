@@ -68,7 +68,7 @@ const uiText = {
     focusItem2: "MuJoCo + SAC + MAML ",
     focusItem3: "离散相位标志调配",
     focusItem4: "零碰撞避障 ",
-    galleryTitle: "项目可视化",
+    galleryTitle: "论文海报",
     galleryNote: "以下展示覆盖仿真环境搭建、算法逻辑验证与多臂协同实验控制过程。",
     media: {
       realKicker: "协同策略",
@@ -113,11 +113,6 @@ const uiText = {
       eyebrow: "动态",
       title: "科研动态",
       note: "近期的学术成果记录，包括 CCF-B 会议论文（ICME）录用与系统实装进展。"
-    },
-    research: {
-      eyebrow: "方向概览",
-      title: "研究方向概览",
-      note: "在详细模块展开之前，先概览当前围绕机械臂控制、强化学习、元学习以及机器视觉在交叉场景下的研究重点。"
     },
     futurePapersSection: {
       eyebrow: "论文发表",
@@ -224,7 +219,7 @@ const uiText = {
       focusItem2: "MuJoCo + SAC + MAML",
       focusItem3: "Discrete Phase Flags",
       focusItem4: "Zero-Collision Avoidance",
-      galleryTitle: "Project Visuals",
+      galleryTitle: "论文海报",
       galleryNote: "Simulation environment setup, algorithm logic validation, and multi-arm cooperative control experiments.",
       media: {
         realKicker: "Coordination",
@@ -269,11 +264,6 @@ const uiText = {
       eyebrow: "Updates",
       title: "Research Updates",
       note: "Recent academic achievements including CCF-B conference paper (ICME) acceptance and system deployment progress."
-    },
-    research: {
-      eyebrow: "Overview",
-      title: "Research Direction Overview",
-      note: "An overview of current research themes centered on robot arm control, reinforcement learning, meta-learning, and computer vision."
     },
     futurePapersSection: {
       eyebrow: "Publications",
@@ -344,12 +334,7 @@ const localeData = {
     featuredProject: {
       summary:
         "基于多模态元强化学习的机械臂实时协同控制研究（VA-FastNavi-MARL）是我最具代表性的项目。在 VS Code 环境下基于 Python 开发，利用 MuJoCo 物理引擎搭建了包含三台 UR5 机械臂的高保真协同控制仿真工作空间。开发基于 SAC 与 MAML 框架的元强化学习控制器，实现三台机械臂对不同指令任务的快速自适应。在噪声与视觉遮挡压测下验证系统性能，模型在 20 个 Epoch 内收敛至零碰撞，响应延迟低于 0.6 秒。以共一作者身份发表学术论文并成功被 ICME 录用。",
-      links: [
-        { label: "项目仓库", url: "https://github.com/zx2002430/Dual_Arm_UR5" },
-        { label: "Base 分支", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Base" },
-        { label: "RL-Algorithm", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/RL-Algorithm" },
-        { label: "Sim-To-Real", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Sim-To-Real" }
-      ],
+      links: [],
       metrics: [
         { label: "机器人平台", value: "三台 UR5 机械臂" },
         { label: "算法框架", value: "SAC + MAML" },
@@ -384,11 +369,7 @@ const localeData = {
     vlaDirection: {
       summary:
         "基于 Isaac Gym 与 PyTorch 复现 RSS 2025 论文 ASAP 核心框架，实现从低保真仿真到高保真环境（Sim-to-Sim/Real）的零样本迁移。面向高维度人形机器人的全身控制（WBC）任务，运用 PPO 强化学习算法结合 AMASS 数据集完成动作追踪训练。依托 HumanoidVerse 仿真平台，成功在 Unitree G1 人形机器人模型上部署并复现跳投、跳跃等高动态敏捷运动。",
-      links: [
-        { label: "EILab", url: "https://eilab-wanghong.eu.cc/" },
-        { label: "GitHub 主页", url: "https://github.com/zx2002430" },
-        { label: "联系方式", url: "#contact" }
-      ],
+      links: [],
       metrics: [
         { label: "方法框架", value: "ASAP + PPO" },
         { label: "仿真平台", value: "Isaac Gym + HumanoidVerse" },
@@ -407,10 +388,6 @@ const localeData = {
         {
           stage: "部署验证",
           detail: "在 HumanoidVerse 上成功部署 Unitree G1，复现跳投、跳跃等高动态敏捷运动。"
-        },
-        {
-          stage: "迁移验证",
-          detail: "验证从低保真仿真到高保真环境（Sim-to-Sim/Real）的零样本迁移能力。"
         }
       ],
       highlights: [
@@ -567,17 +544,12 @@ const localeData = {
       {
         title: "长安大学 （211/双一流高校）",
         subtitle: "机械工程与智能装备学院 · 机械工程（交通建设与智能装备） · 工学学士 | 2023.09 – 2027.06",
-        detail: "GPA: 3.65/5.0（专业排名 7/59），位于陕西西安。主修课程：高等数学（92）、复变函数与积分变换（95）、概率论与数理统计（93）、材料力学（91）、互换性与技术测量（91）、机械控制工程（92）、流体力学与液压传动（92）、机械设计（93）。"
+        detail: "GPA: 3.65/5.0（专业排名 7/59）"
       },
       {
         title: "EILab 具身智能实验室",
-        subtitle: "深度参与科研项目 | 2025 – 至今",
+        subtitle: "",
         detail: "深度参与具身智能实验室项目，研究方向包括多机械臂协同操作、元强化学习算法设计、人形机器人全身控制及 Sim-to-Real 部署。"
-      },
-      {
-        title: "国家级大学生创新训练项目",
-        subtitle: "摊铺机料斗抗离析装置研制 | 2024 – 2026",
-        detail: "主导开发\"智能识别与感知系统\"，基于机器视觉实现沥青混合料状态实时监测。"
       }
     ],
     courseData: [
@@ -588,23 +560,17 @@ const localeData = {
       { name: "互换性与技术测量", grade: "91" },
       { name: "机械控制工程", grade: "92" },
       { name: "流体力学与液压传动", grade: "92" },
-      { name: "机械设计", grade: "93" }
+      { name: "机械设计", grade: "93" },
+      { name: "工程装备数值仿真与应用", grade: "99" }
     ],
     awardData: [
       { title: "国家励志奖学金", year: "2025", level: "国家级" },
-      { title: "长安大学机械工程与智能装备学院孙祖望助学金", year: "2024", level: "院级" },
       { title: "中国大学生机械工程创新创意大赛智能制造赛智能装备与产线应用（国家级）, 三等奖", year: "2025", level: "国家级", role: "负责人" },
       { title: "中国大学生机械工程创新创意大赛智能制造赛区域选拔赛智能装备与产线开发（省级）, 三等奖", year: "2025", level: "省级" },
       { title: "第三届西北赛区大学生物理实验竞赛（省级）, 三等奖", year: "2025", level: "省级", role: "负责人" },
       { title: "全国大学生数学建模竞赛陕西赛区（省级）, 二等奖", year: "2025", level: "省级", role: "负责人" },
       { title: "第十六届全国大学生数学竞赛（省级）, 三等奖", year: "2024", level: "省级" },
       { title: "第十七届全国大学生数学竞赛（省级）, 三等奖", year: "2025", level: "省级" }
-    ],
-    competitionData: [
-      { name: "中国大学生机械工程创新创意大赛智能制造赛", level: "国家级三等奖", role: "负责人, 负责机械设计与核心算法开发" },
-      { name: "第三届西北赛区大学生物理实验竞赛", level: "省级三等奖", role: "负责人, 负责实验设计与软硬件集成" },
-      { name: "全国大学生数学建模竞赛陕西赛区", level: "省级二等奖", role: "负责人, 负责建模与算法设计" },
-      { name: "全国大学生数学竞赛", level: "省级三等奖（第十六届、第十七届）", role: "参赛" }
     ],
     skillData: [
       { category: "编程语言", items: ["Python (熟悉)", "C (熟悉)"] },
@@ -641,10 +607,6 @@ const localeData = {
       summary:
         "VA-FastNavi-MARL is my most representative project. Built in VS Code with Python on MuJoCo, it creates a high-fidelity simulation workspace for three UR5 arms with coordinated control. A meta-reinforcement learning controller based on SAC + MAML achieves fast adaptation across different instruction tasks. Under noise and visual occlusion stress tests, the model converges to zero collision within 20 epochs with latency below 0.6s. The paper was accepted at ICME 2026 (CCF-B) as co-first author.",
       links: [
-        { label: "GitHub Repo", url: "https://github.com/zx2002430/Dual_Arm_UR5" },
-        { label: "Base", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Base" },
-        { label: "RL-Algorithm", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/RL-Algorithm" },
-        { label: "Sim-To-Real", url: "https://github.com/zx2002430/Dual_Arm_UR5/tree/Sim-To-Real" }
       ],
       metrics: [
         { label: "Robot Setup", value: "Three UR5 Arms" },
@@ -680,11 +642,7 @@ const localeData = {
     vlaDirection: {
       summary:
         "Reproduced the ASAP core framework (RSS 2025) using Isaac Gym and PyTorch, achieving zero-shot Sim-to-Sim/Real transfer. Applied PPO reinforcement learning with the AMASS dataset for motion tracking on high-dimensional whole-body control (WBC) tasks. Using the HumanoidVerse platform, successfully deployed and reproduced high-dynamic agile motions including jumping and throwing on the Unitree G1 humanoid robot model.",
-      links: [
-        { label: "EILab", url: "https://eilab-wanghong.eu.cc/" },
-        { label: "GitHub Profile", url: "https://github.com/zx2002430" },
-        { label: "Contact", url: "#contact" }
-      ],
+      links: [],
       metrics: [
         { label: "Framework", value: "ASAP + PPO" },
         { label: "Simulation", value: "Isaac Gym + HumanoidVerse" },
@@ -703,10 +661,6 @@ const localeData = {
         {
           stage: "Deployment",
           detail: "Successfully deployed on Unitree G1 via HumanoidVerse, reproducing jumping, throwing, and other agile motions."
-        },
-        {
-          stage: "Transfer",
-          detail: "Validated zero-shot transfer from low-fidelity simulation to high-fidelity environments (Sim-to-Sim/Real)."
         }
       ],
       highlights: [
@@ -851,17 +805,12 @@ const localeData = {
       {
         title: "Chang'an University (211 / Double First-Class)",
         subtitle: "School of Mechanical Engineering · Mechanical Engineering (Transportation Construction & Intelligent Equipment) · B.E. | Sep 2023 – Jun 2027",
-        detail: "GPA: 3.65/5.0 (Rank 7/59), Xi'an, Shaanxi. Key courses: Advanced Mathematics (92), Complex Functions & Integral Transforms (95), Probability & Statistics (93), Mechanics of Materials (91), Mechanical Control Engineering (92), Fluid Mechanics & Hydraulic Transmission (92), Mechanical Design (93)."
+        detail: "GPA: 3.65/5.0 (Rank 7/59)"
       },
       {
         title: "EILab — Embodied Intelligence Lab",
-        subtitle: "Deep Participation in Research Projects | 2025 – Present",
+        subtitle: "",
         detail: "Deeply involved in embodied intelligence lab projects. Research directions include multi-arm coordinated manipulation, meta-reinforcement learning algorithm design, humanoid whole-body control, and Sim-to-Real deployment."
-      },
-      {
-        title: "National College Innovation Training Project",
-        subtitle: "Development of Anti-Segregation Device for Asphalt Paver | 2024 – 2026",
-        detail: "Led the development of the 'Intelligent Recognition and Perception System' for real-time monitoring of asphalt mixture status using computer vision."
       }
     ],
     courseData: [
@@ -872,7 +821,8 @@ const localeData = {
       { name: "Interchangeability & Technical Measurement", grade: "91" },
       { name: "Mechanical Control Engineering", grade: "92" },
       { name: "Fluid Mechanics & Hydraulic Transmission", grade: "92" },
-      { name: "Mechanical Design", grade: "93" }
+      { name: "Mechanical Design", grade: "93" },
+      { name: "Numerical Simulation & Application of Engineering Equipment", grade: "99" }
     ],
     awardData: [
       { title: "National Endeavor Scholarship", year: "2025", level: "National" },
@@ -883,12 +833,6 @@ const localeData = {
       { title: "Provincial Second Prize, National College Mathematical Contest in Modeling (Shaanxi)", year: "2025", level: "Provincial", role: "Team Lead" },
       { title: "Provincial Third Prize, 16th National College Mathematics Competition", year: "2024", level: "Provincial" },
       { title: "Provincial Third Prize, 17th National College Mathematics Competition", year: "2025", level: "Provincial" }
-    ],
-    competitionData: [
-      { name: "China University Mechanical Engineering Innovation Competition — Intelligent Manufacturing", level: "National Third Prize", role: "Team Lead, Mechanical Design & Algorithm Development" },
-      { name: "3rd NW China University Physics Experiment Competition", level: "Provincial Third Prize", role: "Team Lead, Experiment Design & HW/SW Integration" },
-      { name: "National College Mathematical Contest in Modeling (Shaanxi)", level: "Provincial Second Prize", role: "Team Lead, Modeling & Algorithm Design" },
-      { name: "National College Mathematics Competition", level: "Provincial Third Prize (16th & 17th)", role: "Participant" }
     ],
     skillData: [
       { category: "Programming Languages", items: ["Python (Proficient)", "C (Proficient)"] },
@@ -1187,8 +1131,6 @@ function renderProjects(language) {
   container.innerHTML = localeData[language].projects
     .map(
       (item) => {
-        const primaryLink = item.links?.[0];
-        const secondaryLinks = item.links?.slice(1) ?? [];
         return `
         <article class="project-card">
           <div class="card-state-row">
@@ -1199,14 +1141,6 @@ function renderProjects(language) {
             <p class="project-meta">${item.meta}</p>
           </div>
           <p class="project-summary">${item.description}</p>
-          <div class="card-action-stack">
-            <div class="card-action-primary">
-              ${primaryLink ? renderActionLink(primaryLink, "primary") : ""}
-            </div>
-            <div class="card-action-secondary">
-              ${secondaryLinks.map((link) => renderActionLink(link, "secondary")).join("")}
-            </div>
-          </div>
         </article>
       `;
       }
@@ -1299,7 +1233,6 @@ function renderCompetitions(language) {
 
 function renderSkills(language) {
   const container = document.getElementById("skills-overview");
-  const detailContainer = document.getElementById("skills-detail");
   const data = localeData[language].skillData;
   if (!data || !data.length) return;
 
@@ -1307,15 +1240,6 @@ function renderSkills(language) {
     <article class="stack-overview-item">
       <strong>${s.category}</strong>
       <span>${s.items.join(" / ")}</span>
-    </article>
-  `).join("");
-
-  detailContainer.innerHTML = data.map(s => `
-    <article class="stack-group-card">
-      <strong>${s.category}</strong>
-      <div class="stack-group-tags">
-        ${s.items.map(item => `<span>${item}</span>`).join("")}
-      </div>
     </article>
   `).join("");
 }
@@ -1450,14 +1374,11 @@ function renderPage(language) {
   renderNews(language);
   renderFeaturedProject(language);
   renderVlaDirection(language);
-  renderFilters(language);
-  renderPublications(language);
   renderFuturePapers(language);
   renderProjects(language);
   renderExperience(language);
   renderCourses(language);
   renderAwards(language);
-  renderCompetitions(language);
   renderSkills(language);
   initializeMotionLoaders(language);
   initializeHomepageMotion();

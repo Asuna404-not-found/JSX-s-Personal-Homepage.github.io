@@ -151,19 +151,6 @@
         <div class="timeline timeline-compact" id="news-list"></div>
       </section>
 
-      <section class="section" id="publications">
-        <div class="section-heading inline-heading">
-          <div>
-            <p class="eyebrow" data-i18n="research.eyebrow">Research</p>
-            <h2 data-i18n="research.title">Selected Research</h2>
-          </div>
-        </div>
-        <div class="section-tools">
-          <div class="filter-group" id="pub-filters" aria-label="Publication filters"></div>
-        </div>
-        <div class="publication-list publication-list-compact" id="publication-list"></div>
-      </section>
-
       <section class="section feature-layout feature-layout-vla" id="vla-direction">
         <div class="section-heading inline-heading">
           <div>
@@ -212,8 +199,7 @@
         <div class="section-heading inline-heading">
           <div>
             <p class="eyebrow" data-i18n="multiArm.eyebrow">Featured Project</p>
-            <h2>Sim-to-Real</h2>
-            <p class="section-subtitle">Dual_Arm_UR5</p>
+            <h2>论文简介</h2>
           </div>
         </div>
         <div class="system-entry-focus">
@@ -229,7 +215,7 @@
           <article class="feature-card feature-overview system-entry-overview">
             <div class="feature-topline">
               <span class="feature-badge" data-i18n="multiArm.badge">Featured Research</span>
-              <span class="feature-repo">zx2002430/Dual_Arm_UR5</span>
+              <span class="feature-repo"></span>
             </div>
             <h3 data-i18n="multiArm.overviewTitle">从 MuJoCo 仿真到真实双臂 UR5 部署的完整研究链路</h3>
             <p id="featured-summary"></p>
@@ -251,122 +237,28 @@
             <div class="highlight-list" id="featured-highlights"></div>
           </article>
 
-          <article class="feature-card feature-gallery system-entry-gallery">
+          	          <article class="feature-card feature-gallery system-entry-gallery">
             <div class="gallery-heading">
-              <h3 data-i18n="multiArm.galleryTitle">Project Visuals</h3>
-              <p data-i18n="multiArm.galleryNote">
-                以下展示覆盖真实平台、仿真环境、控制实验与部署过程，均来自当前项目的实际实验记录。
-              </p>
+              <h3 data-i18n="multiArm.galleryTitle">论文海报</h3>
             </div>
             <div class="media-grid">
-              <figure class="media-card media-card-large media-card-overview">
+              <figure class="media-card media-card-poster">
                 <div class="media-label-row">
-                  <span class="media-kicker" data-i18n="multiArm.media.realKicker">Real System</span>
-                  <span class="media-type" data-i18n="multiArm.media.realType">Lab Photo</span>
+                  <span class="media-kicker">ICME</span>
+                  <span class="media-type">Poster</span>
                 </div>
-                <img
-                  class="media-illustration media-photo"
-                  src="assets/images/dual-arm-real-photo.jpg"
-                  loading="lazy"
-                  decoding="async"
-                  alt="Real dual-arm UR5 setup in the lab"
-                  onerror="this.onerror=null;this.src='assets/images/dual-arm-overview.svg';this.classList.remove('media-photo');"
-                >
-                <figcaption>
-                  <strong data-i18n="multiArm.media.realTitle">真实双臂 UR5 实验平台实拍图</strong>
-                  <span data-i18n="multiArm.media.realDesc">展示双臂本体、工作台与相机安装布局，是主页里最直观的真实系统入口。</span>
-                </figcaption>
-              </figure>
-
-              <figure class="media-card media-card-chart">
-                <div class="media-label-row">
-                  <span class="media-kicker" data-i18n="multiArm.media.simKicker">Simulation</span>
-                  <span class="media-type" data-i18n="multiArm.media.simType">MuJoCo</span>
-                </div>
-                <div class="media-preview-shell">
+                <a href="assets/docs/pdf/ICMEposter.pdf" target="_blank" rel="noopener noreferrer">
                   <img
-                    class="media-illustration media-motion"
-                    src="assets/images/mujoco-demo.gif"
-                    data-motion-src="assets/images/mujoco-demo.gif"
-                    data-motion-fallback="assets/images/motion-preview.svg"
+                    class="media-illustration media-poster-img"
+                    src="assets/images/ICMEposter-1.png"
                     loading="lazy"
                     decoding="async"
-                    alt="MuJoCo dual-arm simulation GIF"
-                    data-motion-image
+                    alt="ICME 2026 Poster"
                   >
-                </div>
+                </a>
                 <figcaption>
-                  <strong data-i18n="multiArm.media.simTitle">MuJoCo 双臂仿真交互演示</strong>
-                  <span data-i18n="multiArm.media.simDesc">突出仿真环境中的双臂协作行为与基础控制效果。</span>
-                </figcaption>
-              </figure>
-
-              <figure class="media-card media-card-diagram">
-                <div class="media-label-row">
-                  <span class="media-kicker" data-i18n="multiArm.media.vizKicker">Visualization</span>
-                  <span class="media-type" data-i18n="multiArm.media.vizType">ROS 2 + RViz</span>
-                </div>
-                <div class="media-preview-shell">
-                  <img
-                    class="media-illustration media-motion"
-                    src="assets/images/ros2-rviz-demo.gif"
-                    data-motion-src="assets/images/ros2-rviz-demo.gif"
-                    data-motion-fallback="assets/images/motion-preview.svg"
-                    loading="lazy"
-                    decoding="async"
-                    alt="ROS 2 and RViz dual-arm simulation GIF"
-                    data-motion-image
-                  >
-                </div>
-                <figcaption>
-                  <strong data-i18n="multiArm.media.vizTitle">ROS 2 + RViz 双臂仿真演示</strong>
-                  <span data-i18n="multiArm.media.vizDesc">体现机器人描述、可视化与控制链路在 ROS 2 环境中的联动。</span>
-                </figcaption>
-              </figure>
-
-              <figure class="media-card media-card-trajectory">
-                <div class="media-label-row">
-                  <span class="media-kicker" data-i18n="multiArm.media.ctrlKicker">Control</span>
-                  <span class="media-type" data-i18n="multiArm.media.ctrlType">Trajectory Tracking</span>
-                </div>
-                <div class="media-preview-shell">
-                  <img
-                    class="media-illustration media-motion"
-                    src="assets/images/dual-arm-end-effector-demo.gif"
-                    data-motion-src="assets/images/dual-arm-end-effector-demo.gif"
-                    data-motion-fallback="assets/images/motion-preview.svg"
-                    loading="lazy"
-                    decoding="async"
-                    alt="Dual-arm end-effector trajectory tracking GIF"
-                    data-motion-image
-                  >
-                </div>
-                <figcaption>
-                  <strong data-i18n="multiArm.media.ctrlTitle">双臂末端轨迹跟踪演示</strong>
-                  <span data-i18n="multiArm.media.ctrlDesc">对应任务空间控制与末端跟踪效果，是控制模块的重要展示。</span>
-                </figcaption>
-              </figure>
-
-              <figure class="media-card media-card-portrait">
-                <div class="media-label-row">
-                  <span class="media-kicker" data-i18n="multiArm.media.deployKicker">MoveIt</span>
-                  <span class="media-type" data-i18n="multiArm.media.deployType">Real Robot</span>
-                </div>
-                <div class="media-preview-shell">
-                  <img
-                    class="media-illustration media-motion"
-                    src="assets/images/moveit-dual-arm-deployment.gif"
-                    data-motion-src="assets/images/moveit-dual-arm-deployment.gif"
-                    data-motion-fallback="assets/images/motion-preview.svg"
-                    loading="lazy"
-                    decoding="async"
-                    alt="MoveIt deployment GIF for dual-arm UR5"
-                    data-motion-image
-                  >
-                </div>
-                <figcaption>
-                  <strong data-i18n="multiArm.media.deployTitle">MoveIt 真机部署演示</strong>
-                  <span data-i18n="multiArm.media.deployDesc">展示双臂平台上的规划与执行过程。</span>
+                  <strong>ICME 2026 论文海报</strong>
+                  <span>基于多模态元强化学习的机械臂实时协同控制</span>
                 </figcaption>
               </figure>
             </div>
@@ -374,12 +266,11 @@
         </div>
       </section>
 
-
       <section class="section" id="projects">
         <div class="section-heading inline-heading">
           <div>
-            <p class="eyebrow" data-i18n="systems.eyebrow">Systems</p>
-            <h2 data-i18n="systems.title">Selected Projects</h2>
+            <p class="eyebrow" data-i18n="systems.eyebrow">Projects</p>
+            <h2 data-i18n="systems.title">Research Projects</h2>
           </div>
         </div>
         <div class="project-grid project-grid-compact" id="project-list"></div>
@@ -411,19 +302,11 @@
               <div class="honors-award-list" id="award-list"></div>
             </article>
 
-            <div class="community-subgrid">
-              <article class="stack-card community-detail-card">
-                <h3 data-i18n="community.serviceTitle">Project Leadership</h3>
-                <p data-i18n="community.serviceText">Led multiple national- and provincial-level competitions as team lead, responsible for mechanical design, core algorithm development, and software-hardware system integration.</p>
-                <div class="competition-list" id="competition-list"></div>
-              </article>
-              <article class="stack-card community-detail-card">
-                <h3 data-i18n="community.stackTitle">Technical Stack</h3>
-                <p class="stack-intro">面向研究开发、模型训练与机器人系统部署，形成了较完整的实验与工程工具链。</p>
-                <div class="stack-overview" id="skills-overview"></div>
-                <div class="stack-groups" id="skills-detail"></div>
-              </article>
-            </div>
+            <article class="stack-card community-detail-card">
+              <h3 data-i18n="community.stackTitle">Technical Stack</h3>
+              <p class="stack-intro">面向研究开发、模型训练与机器人系统部署，形成了较完整的实验与工程工具链。</p>
+              <div class="stack-overview" id="skills-overview"></div>
+            </article>
           </div>
         </div>
       </section>
@@ -432,9 +315,6 @@
         <div>
           <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
           <h2 data-i18n="contact.title">Contact</h2>
-          <p data-i18n="contact.text">
-            欢迎就机械臂控制、强化学习、元学习、具身智能等方向交流合作。我也将持续在此更新研究项目与阶段性进展。
-          </p>
         </div>
         <div class="contact-actions">
           <a class="button primary" href="mailto:sx.jing@chd.edu.cn">sx.jing@chd.edu.cn</a>
