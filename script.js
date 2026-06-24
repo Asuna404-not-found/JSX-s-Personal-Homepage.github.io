@@ -1,6 +1,6 @@
 const STORAGE_KEY = "homepage-language";
 const DEFAULT_LANGUAGE = "zh";
-const SITE_URL = "https://zx2002430.github.io/Personal-Homepage/";
+const SITE_URL = "https://Asuna404-not-found.github.io/JSX-s-Personal-Homepage/";
 
 const uiText = {
   zh: {
@@ -69,6 +69,8 @@ const uiText = {
     focusItem3: "离散相位标志调配",
     focusItem4: "零碰撞避障 ",
     galleryTitle: "论文海报",
+    posterTitle: "ICME 2026 论文海报",
+    posterDesc: "基于多模态元强化学习的机械臂实时协同控制",
     galleryNote: "以下展示覆盖仿真环境搭建、算法逻辑验证与多臂协同实验控制过程。",
     media: {
       realKicker: "协同策略",
@@ -141,6 +143,7 @@ const uiText = {
       serviceTitle: "竞赛实践与项目负责人",
       serviceText: "多次担任国家级、省级学科竞赛团队负责人，主导机械设计、核心算法开发及软硬件系统集成工作。",
       stackTitle: "专业技能",
+      stackIntro: "面向研究开发、模型训练与机器人系统部署，形成了较完整的实验与工程工具链。",
       stackText: "Python、C、PyTorch、MuJoCo、Isaac Gym、Solidworks、CAD、EDEM、Abaqus、TeXstudio 等。"
     },
     contact: {
@@ -219,8 +222,10 @@ const uiText = {
       focusItem2: "MuJoCo + SAC + MAML",
       focusItem3: "Discrete Phase Flags",
       focusItem4: "Zero-Collision Avoidance",
-      galleryTitle: "论文海报",
+      galleryTitle: "Poster Gallery",
       galleryNote: "Simulation environment setup, algorithm logic validation, and multi-arm cooperative control experiments.",
+      posterTitle: "ICME 2026 Poster",
+      posterDesc: "Real-Time Coordinated Control of Robot Arms via Multi-Modal Meta-Reinforcement Learning",
       media: {
         realKicker: "Coordination",
         realType: "Mechanism",
@@ -292,6 +297,7 @@ const uiText = {
       serviceTitle: "Competition Leadership",
       serviceText: "Served as team lead for national and provincial academic competitions, leading mechanical design, core algorithm development, and software-hardware system integration.",
       stackTitle: "Professional Skills",
+      stackIntro: "A comprehensive experimental and engineering toolchain for research development, model training, and robotic system deployment.",
       stackText: "Python, C, PyTorch, MuJoCo, Isaac Gym, Solidworks, CAD, EDEM, Abaqus, TeXstudio."
     },
     contact: {

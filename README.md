@@ -1,7 +1,7 @@
 # Shengxi Jing Personal Homepage
 
 Homepage:
-`https://Asuna404-not-found.github.io/Personal-Homepage/`
+`https://Asuna404-not-found.github.io/JSX-s-Personal-Homepage/`
 
 这是一个基于纯静态页面构建的个人研究主页项目，当前包含以下内容：
 
@@ -101,10 +101,10 @@ http://localhost:8000
 - Vercel
 - Netlify
 
-当前仓库使用 GitHub Pages 自动部署：本地修改完成后提交到 `main`，推送到 `Asuna404-not-found/Personal-Homepage`，GitHub Actions 会自动发布到：
+当前仓库使用 GitHub Pages 自动部署：本地修改完成后提交到 `main`，推送到 `Asuna404-not-found/JSX-s-Personal-Homepage`，GitHub Actions 会自动发布到：
 
 ```text
-https://Asuna404-not-found.github.io/Personal-Homepage/
+https://Asuna404-not-found.github.io/JSX-s-Personal-Homepage/
 ```
 
 常用更新流程：
@@ -131,7 +131,7 @@ git push origin main
 
 启用后，站点访问地址通常为：
 
-`https://Asuna404-not-found.github.io/Personal-Homepage/`
+`https://Asuna404-not-found.github.io/JSX-s-Personal-Homepage/`
 
 部署时确保以下文件一起上传：
 
@@ -154,13 +154,13 @@ git push origin main
 推送成功后，GitHub Actions 会自动构建并发布 GitHub Pages。站点会更新到：
 
 ```text
-https://Asuna404-not-found.github.io/Personal-Homepage/
+https://Asuna404-not-found.github.io/JSX-s-Personal-Homepage/
 ```
 
 当前远端仓库：
 
 ```text
-git@github.com:Asuna404-not-found/Personal-Homepage.git
+git@github.com:Asuna404-not-found/JSX-s-Personal-Homepage.git
 ```
 
 ### SSH over 443 说明
@@ -186,7 +186,7 @@ Host github.com
 配置完成后，将对应公钥添加到 GitHub 账号的 SSH Keys 中，再确认远端地址为：
 
 ```powershell
-git remote set-url origin git@github.com:Asuna404-not-found/Personal-Homepage.git
+git remote set-url origin git@github.com:Asuna404-not-found/JSX-s-Personal-Homepage.git
 ```
 
 后续维护时，只需要正常 `commit + push`，不需要重复配置 SSH 或 GitHub Pages。
